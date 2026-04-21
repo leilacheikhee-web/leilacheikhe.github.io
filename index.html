@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leila Cheikhe — AI Strategy Architect</title>
-<meta name="description" content="AI Strategy Architect. IBM watsonx Specialist. U.S. State Department Fellow. Designing intelligent infrastructure for Africa&#x2019;s 1.5 billion. Building from Dakhla to global scale.">
-<meta property="og:title" content="Leila Cheikhe &#x2014; AI Strategy Architect">
-<meta property="og:description" content="IBM watsonx Engineer &#xB7; U.S. State Dept Fellow &#xB7; Building intelligent systems for Africa&#x2019;s 1.5B.">
+<title>Leila Cheikhe | AI Strategy Architect &amp; Systems Builder</title>
+<meta name="description" content="AI Strategy Architect designing intelligent systems for Africa's 1.5 billion. IBM watsonx Engineer, U.S. State Department America 250 Fellow, Founder of TANIT, Artisia, and CoopAI. Building from Dakhla to global scale.">
+<meta property="og:title" content="Leila Cheikhe — AI Strategy Architect">
+<meta property="og:description" content="IBM watsonx Engineer · U.S. State Dept Fellow · Designing intelligent infrastructure for Africa's 1.5 billion.">
 <meta property="og:image" content="assets/profile.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leilacheikhe.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2305081A'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='14' font-weight='700' fill='%23C4953A'>LC</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -20,411 +24,434 @@
   --gold-pale: rgba(196,149,58,0.07);
   --white:     #F8F6F2;
   --muted:     rgba(248,246,242,0.52);
-  --border:    rgba(196,149,58,0.15);
+  --border:    rgba(196,149,58,0.18);
   --line:      #151C3B;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { background:var(--ink); color:var(--white); font-family:'Inter',sans-serif; line-height:1.75; overflow-x:hidden; }
-h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; }
-::-webkit-scrollbar { width:5px; }
-::-webkit-scrollbar-track { background:var(--ink); }
-::-webkit-scrollbar-thumb { background:var(--gold); border-radius:3px; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink); color: var(--white);
+  font-family: 'Inter', sans-serif; line-height: 1.75; overflow-x: hidden;
+}
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+img { max-width: 100%; display: block; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
 
+/* ─── NAV ─────────────────────────────────────────────────── */
 nav {
-  position:fixed; top:0; width:100%; z-index:1000;
-  padding:16px 64px; display:flex; align-items:center; justify-content:space-between;
-  background:rgba(5,8,26,0.92); backdrop-filter:blur(24px);
-  border-bottom:1px solid rgba(196,149,58,0.08); transition:all 0.3s;
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  padding: 16px 64px; display: flex; align-items: center; justify-content: space-between;
+  background: rgba(5,8,26,0.94); backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(196,149,58,0.08); transition: background 0.3s;
 }
 .nav-logo {
-  font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600;
-  color:var(--white); text-decoration:none; letter-spacing:0.3px;
-  display:flex; align-items:center; gap:12px;
+  font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600;
+  color: var(--white); text-decoration: none; letter-spacing: 0.3px;
+  display: flex; align-items: center; gap: 12px;
 }
 .nav-logo-mark {
-  width:32px; height:32px; border:1px solid rgba(196,149,58,0.45);
-  border-radius:3px; display:flex; align-items:center; justify-content:center;
-  font-family:'Cormorant Garamond',serif; font-size:13px; font-weight:700; color:var(--gold);
+  width: 34px; height: 34px; border: 1px solid rgba(196,149,58,0.4); border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 700; color: var(--gold);
+  flex-shrink: 0;
 }
-.nav-links { display:flex; gap:36px; list-style:none; }
+.nav-links { display: flex; gap: 36px; list-style: none; }
 .nav-links a {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:500;
-  letter-spacing:1.5px; text-transform:uppercase;
-  color:rgba(248,246,242,0.65); text-decoration:none; transition:color 0.3s;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(248,246,242,0.62); text-decoration: none; transition: color 0.25s;
 }
-.nav-links a:hover { color:var(--gold); }
+.nav-links a:hover { color: var(--gold); }
 .nav-cta {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700;
-  letter-spacing:1px; text-transform:uppercase;
-  background:var(--gold); color:var(--ink); padding:10px 22px;
-  border-radius:3px; text-decoration:none; transition:all 0.3s;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  background: var(--gold); color: var(--ink); padding: 10px 22px;
+  border-radius: 3px; text-decoration: none; transition: all 0.25s;
 }
-.nav-cta:hover { background:var(--gold-lt); transform:translateY(-1px); }
-.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
-.hamburger span { display:block; width:22px; height:1.5px; background:var(--white); transition:all 0.3s; }
+.nav-cta:hover { background: var(--gold-lt); transform: translateY(-1px); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; border-radius: 1px; }
 .mobile-menu {
-  display:none; position:fixed; top:0; left:0; width:100%; height:100vh;
-  background:var(--ink); z-index:999; flex-direction:column;
-  align-items:center; justify-content:center; gap:28px;
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+  background: var(--ink); z-index: 999; flex-direction: column;
+  align-items: center; justify-content: center; gap: 28px;
 }
-.mobile-menu.open { display:flex; }
-.mobile-menu a { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:var(--white); text-decoration:none; transition:color 0.3s; letter-spacing:1px; }
-.mobile-menu a:hover { color:var(--gold); }
-.mobile-close { position:absolute; top:24px; right:28px; background:none; border:none; color:var(--white); font-size:28px; cursor:pointer; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--white); text-decoration: none; transition: color 0.25s; letter-spacing: 1px; }
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-close { position: absolute; top: 24px; right: 28px; background: none; border: none; color: var(--white); font-size: 28px; cursor: pointer; line-height: 1; }
 
+/* ─── BANNER ──────────────────────────────────────────────── */
 .banner {
-  background:var(--gold); color:var(--ink); text-align:center; padding:11px 20px; margin-top:65px;
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+  background: var(--gold); color: var(--ink); text-align: center; padding: 11px 20px;
+  margin-top: 65px; font-family: 'Montserrat', sans-serif; font-size: 11px;
+  font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
 }
 
-section { padding:100px 64px; }
-.container { max-width:1180px; margin:0 auto; }
+/* ─── LAYOUT ──────────────────────────────────────────────── */
+section { padding: 108px 64px; }
+.container { max-width: 1180px; margin: 0 auto; }
 .label {
-  font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700;
-  letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:14px; display:block;
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 14px; display: block;
 }
-.section-title { font-size:46px; font-weight:300; color:var(--white); line-height:1.15; letter-spacing:-0.5px; margin-bottom:16px; }
-.section-title strong { font-weight:600; }
-.section-sub { font-size:16px; color:var(--muted); margin-bottom:64px; max-width:580px; line-height:1.85; }
-.fade-up { opacity:0; transform:translateY(28px); transition:opacity 0.65s ease, transform 0.65s ease; }
-.fade-up.visible { opacity:1; transform:translateY(0); }
+.section-title { font-size: 46px; font-weight: 300; color: var(--white); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 16px; }
+.section-title strong { font-weight: 600; }
+.section-sub { font-size: 16px; color: var(--muted); margin-bottom: 64px; max-width: 580px; line-height: 1.85; }
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
 
+/* ─── HERO ────────────────────────────────────────────────── */
 .hero {
-  min-height:100vh; display:flex; align-items:center;
-  padding:100px 64px 80px; position:relative; overflow:hidden;
+  min-height: 100vh; display: flex; align-items: center;
+  padding: 100px 64px 80px; position: relative; overflow: hidden;
 }
 .hero::before {
-  content:''; position:absolute; top:0; right:0; width:55%; height:100%;
-  background:radial-gradient(ellipse at 80% 40%, rgba(196,149,58,0.05) 0%, transparent 65%);
-  pointer-events:none;
+  content: ''; position: absolute; top: 0; right: 0; width: 55%; height: 100%;
+  background: radial-gradient(ellipse at 80% 40%, rgba(196,149,58,0.05) 0%, transparent 65%);
+  pointer-events: none;
 }
-.hero::after {
-  content:''; position:absolute; bottom:0; left:0; width:100%; height:1px;
-  background:var(--line);
-}
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--line); }
 .hero-content {
-  max-width:1180px; margin:0 auto; width:100%;
-  display:grid; grid-template-columns:1fr 400px; gap:80px; align-items:center;
+  max-width: 1180px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 400px; gap: 80px; align-items: center;
 }
 .hero-tag {
-  display:inline-flex; align-items:center; gap:12px;
-  font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700;
-  letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:32px;
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
 }
-.hero-tag::before { content:''; width:28px; height:1px; background:var(--gold); }
+.hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
 .hero h1 {
-  font-size:68px; font-weight:300; line-height:1.07;
-  letter-spacing:-1px; color:var(--white); margin-bottom:28px;
+  font-size: 68px; font-weight: 300; line-height: 1.07;
+  letter-spacing: -1px; color: var(--white); margin-bottom: 28px;
 }
-.hero h1 em { font-style:italic; font-weight:300; color:var(--gold); }
-.hero h1 strong { font-weight:600; }
+.hero h1 em { font-style: italic; font-weight: 300; color: var(--gold); }
+.hero h1 strong { font-weight: 600; }
 .hero-meta {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:500;
-  letter-spacing:1px; color:var(--muted); margin-bottom:12px; text-transform:uppercase;
-  display:flex; align-items:center; flex-wrap:wrap; gap:4px;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500;
+  letter-spacing: 1px; color: var(--muted); margin-bottom: 12px; text-transform: uppercase;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 4px;
 }
-.hero-meta .sep { color:rgba(196,149,58,0.5); margin:0 6px; }
+.hero-meta .sep { color: rgba(196,149,58,0.4); margin: 0 6px; }
 .hero-sub {
-  font-family:'Cormorant Garamond',serif; font-style:italic;
-  font-size:19px; color:rgba(248,246,242,0.6); margin-bottom:48px; line-height:1.75;
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 19px; color: rgba(248,246,242,0.58); margin-bottom: 48px; line-height: 1.75;
 }
-.hero-buttons { display:flex; gap:12px; flex-wrap:wrap; }
+.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
 .btn-primary {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase;
-  background:var(--gold); color:var(--ink); padding:14px 30px;
-  border-radius:3px; text-decoration:none; transition:all 0.3s;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: var(--gold); color: var(--ink); padding: 14px 30px;
+  border-radius: 3px; text-decoration: none; transition: all 0.3s;
 }
-.btn-primary:hover { background:var(--gold-lt); transform:translateY(-2px); box-shadow:0 10px 30px rgba(196,149,58,0.25); }
+.btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(196,149,58,0.25); }
 .btn-secondary {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:600;
-  letter-spacing:1.5px; text-transform:uppercase;
-  background:transparent; color:var(--white); padding:14px 30px;
-  border-radius:3px; border:1px solid rgba(248,246,242,0.22); text-decoration:none; transition:all 0.3s;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: transparent; color: var(--white); padding: 14px 30px;
+  border-radius: 3px; border: 1px solid rgba(248,246,242,0.22); text-decoration: none; transition: all 0.3s;
 }
-.btn-secondary:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
 .btn-ghost {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:600;
-  letter-spacing:1.5px; text-transform:uppercase;
-  background:transparent; color:var(--gold); padding:14px 30px;
-  border-radius:3px; border:1px solid rgba(196,149,58,0.32); text-decoration:none; transition:all 0.3s;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: transparent; color: var(--gold); padding: 14px 30px;
+  border-radius: 3px; border: 1px solid rgba(196,149,58,0.3); text-decoration: none; transition: all 0.3s;
 }
-.btn-ghost:hover { background:var(--gold-pale); border-color:var(--gold); transform:translateY(-2px); }
-
-.hero-visual { position:relative; display:flex; justify-content:flex-end; }
-.photo-frame { position:relative; width:360px; }
+.btn-ghost:hover { background: var(--gold-pale); border-color: var(--gold); transform: translateY(-2px); }
+.hero-visual { position: relative; display: flex; justify-content: flex-end; }
+.photo-frame { position: relative; width: 360px; }
 .photo-img {
-  width:100%; height:480px; object-fit:cover; object-position:top center;
-  border-radius:2px; display:block;
+  width: 100%; height: 480px; object-fit: cover; object-position: top center;
+  border-radius: 2px; display: block;
 }
 .photo-border {
-  position:absolute; top:-14px; right:-14px; bottom:14px; left:14px;
-  border:1px solid rgba(196,149,58,0.28); border-radius:2px; z-index:-1;
+  position: absolute; top: -14px; right: -14px; bottom: 14px; left: 14px;
+  border: 1px solid rgba(196,149,58,0.25); border-radius: 2px; z-index: -1;
 }
 .photo-badge {
-  position:absolute; bottom:-20px; left:-20px;
-  background:var(--ink-card); border:1px solid var(--border);
-  border-radius:3px; padding:16px 20px;
-  font-family:'Montserrat',sans-serif; font-size:10px; color:var(--muted);
-  letter-spacing:1px; text-transform:uppercase; box-shadow:0 20px 60px rgba(0,0,0,0.5);
+  position: absolute; bottom: -20px; left: -20px;
+  background: var(--ink-card); border: 1px solid var(--border); border-radius: 3px;
+  padding: 16px 20px; font-family: 'Montserrat', sans-serif; font-size: 10px;
+  color: var(--muted); letter-spacing: 1px; text-transform: uppercase;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 .photo-badge strong {
-  display:block; font-size:17px; font-family:'Cormorant Garamond',serif;
-  color:var(--gold); font-weight:600; letter-spacing:0; margin-bottom:3px; text-transform:none;
+  display: block; font-size: 17px; font-family: 'Cormorant Garamond', serif;
+  color: var(--gold); font-weight: 600; letter-spacing: 0; margin-bottom: 3px; text-transform: none;
 }
 
+/* ─── IMPACT BAR ──────────────────────────────────────────── */
 .impact-bar {
-  background:var(--ink-card); padding:52px 64px;
-  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  background: var(--ink-card); padding: 52px 64px;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .impact-grid {
-  max-width:1180px; margin:0 auto;
-  display:grid; grid-template-columns:repeat(6,1fr); gap:0;
+  max-width: 1180px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 0;
 }
-.impact-item { text-align:center; padding:12px; border-right:1px solid var(--line); }
-.impact-item:last-child { border-right:none; }
+.impact-item { text-align: center; padding: 12px; border-right: 1px solid var(--line); }
+.impact-item:last-child { border-right: none; }
 .impact-number {
-  font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:600;
-  color:var(--gold); line-height:1; margin-bottom:8px;
+  font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 600;
+  color: var(--gold); line-height: 1; margin-bottom: 8px;
 }
 .impact-label {
-  font-family:'Montserrat',sans-serif; font-size:10px; font-weight:600;
-  letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); line-height:1.55;
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); line-height: 1.55;
 }
 
-.about { background:var(--ink-mid); }
-.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:96px; align-items:start; }
-.about-text p { font-size:15px; color:rgba(248,246,242,0.75); margin-bottom:22px; line-height:1.95; }
+/* ─── ABOUT ───────────────────────────────────────────────── */
+.about { background: var(--ink-mid); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+.about-text p { font-size: 15px; color: rgba(248,246,242,0.75); margin-bottom: 22px; line-height: 1.95; }
 .pullquote {
-  border-left:2px solid var(--gold); padding:22px 28px; margin:36px 0;
-  background:rgba(196,149,58,0.04);
+  border-left: 2px solid var(--gold); padding: 22px 28px; margin: 36px 0;
+  background: rgba(196,149,58,0.04);
 }
 .pullquote p {
-  font-family:'Cormorant Garamond',serif; font-style:italic;
-  font-size:19px; color:rgba(248,246,242,0.82); line-height:1.75; margin:0 !important;
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 19px; color: rgba(248,246,242,0.82); line-height: 1.75; margin: 0;
 }
 .about-link {
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:600;
-  letter-spacing:1.5px; text-transform:uppercase;
-  color:var(--gold); text-decoration:none; transition:opacity 0.3s;
-  display:inline-flex; align-items:center; gap:8px;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; transition: opacity 0.3s;
+  display: inline-flex; align-items: center; gap: 8px;
 }
-.about-link:hover { opacity:0.7; }
-.competencies { margin-bottom:44px; }
+.about-link:hover { opacity: 0.68; }
+.competencies { margin-bottom: 44px; }
 .competency-item {
-  display:flex; align-items:flex-start; gap:16px;
-  padding:18px 0; border-bottom:1px solid var(--line);
+  display: flex; align-items: flex-start; gap: 16px;
+  padding: 18px 0; border-bottom: 1px solid var(--line);
 }
-.competency-item:first-child { border-top:1px solid var(--line); }
+.competency-item:first-child { border-top: 1px solid var(--line); }
 .comp-icon {
-  width:38px; height:38px; border-radius:3px;
-  background:var(--gold-pale); border:1px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  flex-shrink:0; font-size:16px;
+  width: 38px; height: 38px; border-radius: 3px;
+  background: var(--gold-pale); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
-.comp-text { flex:1; }
-.comp-name { font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.5px; color:var(--white); margin-bottom:3px; }
-.comp-desc { font-size:12px; color:var(--muted); line-height:1.6; }
-.timeline { list-style:none; }
-.timeline li { display:flex; gap:18px; margin-bottom:18px; }
-.t-year { font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; color:var(--gold); min-width:44px; padding-top:2px; letter-spacing:0.5px; }
-.t-dot { width:6px; height:6px; background:var(--gold); border-radius:50%; margin-top:7px; flex-shrink:0; box-shadow:0 0 8px rgba(196,149,58,0.4); }
-.t-text { font-size:13px; color:rgba(248,246,242,0.68); line-height:1.65; }
+.comp-icon svg { width: 18px; height: 18px; stroke: var(--gold); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.comp-text { flex: 1; }
+.comp-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: var(--white); margin-bottom: 3px; }
+.comp-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+.timeline { list-style: none; }
+.timeline li { display: flex; gap: 18px; margin-bottom: 18px; }
+.t-year { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: var(--gold); min-width: 44px; padding-top: 2px; letter-spacing: 0.5px; }
+.t-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; margin-top: 7px; flex-shrink: 0; box-shadow: 0 0 8px rgba(196,149,58,0.4); }
+.t-text { font-size: 13px; color: rgba(248,246,242,0.68); line-height: 1.65; }
 
-.ventures { background:var(--ink); }
-.ventures-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+/* ─── VENTURES ────────────────────────────────────────────── */
+.ventures { background: var(--ink); }
+.ventures-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .venture-card {
-  background:var(--ink-card); border:1px solid var(--line);
-  border-radius:4px; padding:36px; transition:all 0.35s;
-  position:relative; overflow:hidden; display:flex; flex-direction:column;
+  background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px;
+  padding: 36px; transition: all 0.35s; position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
 }
 .venture-card::after {
-  content:''; position:absolute; top:0; left:0; width:100%; height:2px;
-  background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.35s ease;
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
 }
-.venture-card:hover::after { transform:scaleX(1); }
-.venture-card:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(0,0,0,0.45); border-color:rgba(196,149,58,0.2); }
+.venture-card:hover::after { transform: scaleX(1); }
+.venture-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,0.45); border-color: rgba(196,149,58,0.2); }
 .venture-card.flagship {
-  grid-column:1/-1; border-color:rgba(196,149,58,0.22);
-  background:linear-gradient(135deg, var(--ink-card) 0%, rgba(196,149,58,0.04) 100%);
+  grid-column: 1 / -1; border-color: rgba(196,149,58,0.22);
+  background: linear-gradient(135deg, var(--ink-card) 0%, rgba(196,149,58,0.04) 100%);
 }
-.venture-top { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:24px; gap:16px; }
+.venture-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; gap: 16px; }
 .venture-logo-wrap {
-  width:56px; height:56px; border-radius:4px; background:rgba(255,255,255,0.04);
-  border:1px solid var(--border); display:flex; align-items:center;
-  justify-content:center; overflow:hidden; flex-shrink:0;
+  width: 56px; height: 56px; border-radius: 4px; background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border); display: flex; align-items: center;
+  justify-content: center; overflow: hidden; flex-shrink: 0;
 }
-.venture-logo-wrap img { width:100%; height:100%; object-fit:contain; padding:6px; }
+.venture-logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
 .venture-logo-text {
-  width:56px; height:56px; border-radius:4px; background:var(--gold-pale);
-  border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
-  flex-shrink:0; font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:600; color:var(--gold);
+  width: 56px; height: 56px; border-radius: 4px; background: var(--gold-pale);
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--gold);
 }
-.venture-badges { display:flex; flex-direction:column; align-items:flex-end; gap:6px; }
+.venture-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
 .badge {
-  font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase; padding:4px 10px; border-radius:2px;
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 2px;
 }
-.badge-live { background:rgba(14,166,114,0.1); color:#0EA672; border:1px solid rgba(14,166,114,0.25); }
-.badge-dev  { background:rgba(245,158,11,0.1); color:#F59E0B; border:1px solid rgba(245,158,11,0.25); }
-.badge-flag { background:rgba(196,149,58,0.1); color:var(--gold); border:1px solid rgba(196,149,58,0.3); }
-.badge-type { background:transparent; color:var(--muted); border:1px solid var(--line); }
-.venture-title { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:600; color:var(--white); margin-bottom:4px; line-height:1.2; }
-.venture-system { font-family:'Montserrat',sans-serif; font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
-.venture-desc { font-size:14px; color:rgba(248,246,242,0.62); margin-bottom:20px; line-height:1.82; flex:1; }
+.badge-live { background: rgba(14,166,114,0.1); color: #0EA672; border: 1px solid rgba(14,166,114,0.25); }
+.badge-dev  { background: rgba(245,158,11,0.1); color: #F59E0B; border: 1px solid rgba(245,158,11,0.25); }
+.badge-flag { background: rgba(196,149,58,0.1); color: var(--gold); border: 1px solid rgba(196,149,58,0.3); }
+.badge-type { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.venture-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--white); margin-bottom: 4px; line-height: 1.2; }
+.venture-system { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.venture-desc { font-size: 14px; color: rgba(248,246,242,0.62); margin-bottom: 20px; line-height: 1.82; flex: 1; }
 .venture-impact {
-  display:flex; align-items:flex-start; gap:10px; margin-bottom:16px;
-  padding:14px 16px; background:rgba(196,149,58,0.05); border-radius:3px; border:1px solid rgba(196,149,58,0.1);
+  display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px;
+  padding: 14px 16px; background: rgba(196,149,58,0.05); border-radius: 3px; border: 1px solid rgba(196,149,58,0.1);
 }
-.vi-label { font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); white-space:nowrap; padding-top:1px; }
-.vi-text { font-size:13px; color:rgba(248,246,242,0.68); line-height:1.6; }
-.venture-why { margin-bottom:20px; }
-.vy-label { font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:6px; }
-.venture-why p { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:15px; color:rgba(248,246,242,0.58); line-height:1.72; }
-.stack-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:22px; }
+.vi-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); white-space: nowrap; padding-top: 1px; }
+.vi-text { font-size: 13px; color: rgba(248,246,242,0.68); line-height: 1.6; }
+.venture-why { margin-bottom: 20px; }
+.vy-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+.venture-why p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: rgba(248,246,242,0.58); line-height: 1.72; }
+.stack-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
 .tag {
-  font-family:'Montserrat',sans-serif; font-size:9px; font-weight:600; letter-spacing:0.5px;
-  background:var(--gold-pale); color:var(--gold); border:1px solid rgba(196,149,58,0.18);
-  padding:4px 10px; border-radius:2px; text-transform:uppercase;
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.5px;
+  background: var(--gold-pale); color: var(--gold); border: 1px solid rgba(196,149,58,0.18);
+  padding: 4px 10px; border-radius: 2px; text-transform: uppercase;
 }
 .venture-link {
-  font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px;
-  text-transform:uppercase; color:var(--gold); text-decoration:none;
-  display:inline-flex; align-items:center; gap:6px; transition:opacity 0.3s; margin-top:auto;
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.3s; margin-top: auto;
 }
-.venture-link:hover { opacity:0.68; }
+.venture-link:hover { opacity: 0.68; }
 
-.recognition { background:var(--ink-mid); }
-.rec-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+/* ─── RECOGNITION ─────────────────────────────────────────── */
+.recognition { background: var(--ink-mid); }
+.rec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .rec-card {
-  background:var(--ink-card); border:1px solid var(--line); border-radius:4px; padding:32px;
-  transition:all 0.3s; position:relative; overflow:hidden;
+  background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px;
+  padding: 32px; transition: all 0.3s; position: relative; overflow: hidden;
 }
-.rec-card::before { content:''; position:absolute; top:0; left:0; width:2px; height:100%; background:var(--gold); }
-.rec-card:hover { border-color:var(--border); transform:translateY(-3px); }
-.rec-year { font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; color:var(--gold); margin-bottom:12px; }
-.rec-title { font-family:'Cormorant Garamond',serif; font-size:21px; font-weight:600; color:var(--white); margin-bottom:8px; line-height:1.3; }
-.rec-org { font-family:'Montserrat',sans-serif; font-size:10px; font-weight:500; letter-spacing:0.5px; color:var(--muted); margin-bottom:14px; text-transform:uppercase; }
-.rec-desc { font-size:13px; color:rgba(248,246,242,0.58); line-height:1.72; }
+.rec-card::before { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 100%; background: var(--gold); }
+.rec-card:hover { border-color: var(--border); transform: translateY(-3px); }
+.rec-year { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 12px; }
+.rec-title { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 600; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
+.rec-org { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 14px; text-transform: uppercase; }
+.rec-desc { font-size: 13px; color: rgba(248,246,242,0.58); line-height: 1.72; }
 
-.cv-section { background:var(--ink); }
+/* ─── CV ──────────────────────────────────────────────────── */
+.cv-section { background: var(--ink); }
 .cv-card {
-  max-width:1180px; margin:0 auto;
-  background:var(--ink-card); border:1px solid rgba(196,149,58,0.2);
-  border-radius:4px; padding:64px;
-  display:grid; grid-template-columns:1fr 300px; gap:64px; align-items:start;
+  max-width: 1180px; margin: 0 auto;
+  background: var(--ink-card); border: 1px solid rgba(196,149,58,0.2);
+  border-radius: 4px; padding: 64px;
+  display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start;
 }
-.cv-title { font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:300; color:var(--white); margin-bottom:12px; line-height:1.2; }
-.cv-title strong { font-weight:600; }
-.cv-intro { font-size:15px; color:var(--muted); margin-bottom:40px; line-height:1.85; max-width:520px; }
-.cv-list { list-style:none; margin-bottom:40px; }
-.cv-list li { display:flex; gap:20px; padding:16px 0; border-bottom:1px solid var(--line); align-items:flex-start; }
-.cv-list li:first-child { border-top:1px solid var(--line); }
-.cv-yr { font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; color:var(--gold); min-width:40px; padding-top:2px; letter-spacing:0.5px; }
-.cv-txt { font-size:14px; color:rgba(248,246,242,0.72); line-height:1.65; }
-.cv-txt strong { color:var(--white); font-weight:600; }
-.cv-actions { display:flex; flex-direction:column; gap:14px; position:sticky; top:100px; }
+.cv-title { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--white); margin-bottom: 12px; line-height: 1.2; }
+.cv-title strong { font-weight: 600; }
+.cv-intro { font-size: 15px; color: var(--muted); margin-bottom: 40px; line-height: 1.85; max-width: 520px; }
+.cv-list { list-style: none; margin-bottom: 40px; }
+.cv-list li { display: flex; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
+.cv-list li:first-child { border-top: 1px solid var(--line); }
+.cv-yr { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: var(--gold); min-width: 40px; padding-top: 2px; letter-spacing: 0.5px; }
+.cv-txt { font-size: 14px; color: rgba(248,246,242,0.72); line-height: 1.65; }
+.cv-txt strong { color: var(--white); font-weight: 600; }
+.cv-actions { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 100px; }
 .btn-cv {
-  display:flex; align-items:center; justify-content:center;
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase;
-  background:var(--gold); color:var(--ink); padding:18px 28px;
-  border-radius:3px; text-decoration:none; transition:all 0.3s;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: var(--gold); color: var(--ink); padding: 18px 28px;
+  border-radius: 3px; text-decoration: none; transition: all 0.3s;
 }
-.btn-cv:hover { background:var(--gold-lt); transform:translateY(-2px); box-shadow:0 10px 30px rgba(196,149,58,0.25); }
+.btn-cv:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(196,149,58,0.25); }
 .btn-cv-out {
-  display:flex; align-items:center; justify-content:center;
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:600;
-  letter-spacing:1.5px; text-transform:uppercase;
-  background:transparent; color:var(--white); padding:16px 28px;
-  border-radius:3px; border:1px solid rgba(248,246,242,0.2); text-decoration:none; transition:all 0.3s;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: transparent; color: var(--white); padding: 16px 28px;
+  border-radius: 3px; border: 1px solid rgba(248,246,242,0.2); text-decoration: none; transition: all 0.3s;
 }
-.btn-cv-out:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
-.cv-note { font-size:11px; color:var(--muted); text-align:center; padding:0 8px; line-height:1.65; }
+.btn-cv-out:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.cv-note { font-size: 11px; color: var(--muted); text-align: center; padding: 0 8px; line-height: 1.65; }
 
-.contact { background:var(--ink-mid); }
-.contact-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:60px; }
-.open-to { list-style:none; margin:20px 0 36px; }
-.open-to li { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:rgba(248,246,242,0.72); margin-bottom:14px; line-height:1.65; }
-.open-to li::before { content:'&#x2192;'; color:var(--gold); font-size:13px; flex-shrink:0; padding-top:1px; }
-.social-items { display:flex; flex-direction:column; gap:10px; }
+/* ─── CONTACT ─────────────────────────────────────────────── */
+.contact { background: var(--ink-mid); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
+.open-to { list-style: none; margin: 20px 0 36px; }
+.open-to li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 14px; color: rgba(248,246,242,0.72); margin-bottom: 14px; line-height: 1.65;
+}
+.open-to li::before {
+  content: '\2192';
+  color: var(--gold); font-size: 13px; flex-shrink: 0; padding-top: 1px;
+}
+.social-items { display: flex; flex-direction: column; gap: 10px; }
 .social-item {
-  display:flex; align-items:center; gap:14px;
-  background:var(--ink-card); border:1px solid var(--line);
-  border-radius:4px; padding:14px 20px; text-decoration:none; transition:all 0.3s;
+  display: flex; align-items: center; gap: 14px;
+  background: var(--ink-card); border: 1px solid var(--line);
+  border-radius: 4px; padding: 14px 20px; text-decoration: none; transition: all 0.3s;
 }
-.social-item:hover { border-color:var(--border); transform:translateX(4px); }
-.s-info { flex:1; }
-.s-name { font-family:'Montserrat',sans-serif; font-size:12px; font-weight:600; color:var(--white); }
-.s-handle { font-size:11px; color:var(--muted); }
-.contact-form { background:var(--ink-card); border:1px solid var(--line); border-radius:4px; padding:40px; }
-.form-title { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:600; color:var(--white); margin-bottom:28px; }
-.form-group { margin-bottom:18px; }
-.form-label { display:block; font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+.social-item:hover { border-color: var(--border); transform: translateX(4px); }
+.s-info { flex: 1; }
+.s-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; color: var(--white); }
+.s-handle { font-size: 11px; color: var(--muted); }
+.s-arrow { color: var(--gold); font-size: 14px; }
+.contact-form { background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px; padding: 40px; }
+.form-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--white); margin-bottom: 28px; }
+.form-group { margin-bottom: 18px; }
+.form-label { display: block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 .form-input, .form-textarea, .form-select {
-  width:100%; background:var(--ink); border:1px solid var(--line);
-  border-radius:3px; padding:13px 16px; color:var(--white);
-  font-family:'Inter',sans-serif; font-size:13px; transition:border-color 0.3s; outline:none; appearance:none;
+  width: 100%; background: var(--ink); border: 1px solid var(--line);
+  border-radius: 3px; padding: 13px 16px; color: var(--white);
+  font-family: 'Inter', sans-serif; font-size: 13px;
+  transition: border-color 0.3s; outline: none; appearance: none;
 }
-.form-input:focus, .form-textarea:focus, .form-select:focus { border-color:var(--gold); }
-.form-textarea { height:140px; resize:vertical; }
-.form-select option { background:var(--ink-card); }
+.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--gold); }
+.form-textarea { height: 140px; resize: vertical; }
+.form-select option { background: var(--ink-card); }
 .form-submit {
-  width:100%; background:var(--gold); color:var(--ink); border:none;
-  border-radius:3px; padding:16px; cursor:pointer;
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase; transition:all 0.3s;
+  width: 100%; background: var(--gold); color: var(--ink); border: none;
+  border-radius: 3px; padding: 16px; cursor: pointer;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.3s;
 }
-.form-submit:hover { background:var(--gold-lt); transform:translateY(-1px); }
-.form-submit:disabled { opacity:0.6; cursor:not-allowed; transform:none; }
-.form-note { text-align:center; font-size:11px; color:var(--muted); margin-top:12px; }
+.form-submit:hover { background: var(--gold-lt); transform: translateY(-1px); }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.form-note { text-align: center; font-size: 11px; color: var(--muted); margin-top: 12px; }
 
+/* ─── FOOTER ──────────────────────────────────────────────── */
 footer {
-  background:var(--ink); padding:56px 64px;
-  border-top:1px solid var(--line); text-align:center;
+  background: var(--ink); padding: 56px 64px;
+  border-top: 1px solid var(--line); text-align: center;
 }
-.footer-logo { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:var(--white); margin-bottom:6px; }
-.footer-tag { font-family:'Montserrat',sans-serif; font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:28px; }
-.footer-nav { display:flex; justify-content:center; gap:28px; list-style:none; margin-bottom:28px; }
-.footer-nav a { font-family:'Montserrat',sans-serif; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); text-decoration:none; transition:color 0.3s; }
-.footer-nav a:hover { color:var(--gold); }
-.footer-social { display:flex; justify-content:center; gap:12px; margin-bottom:28px; }
-.footer-social a { width:38px; height:38px; border-radius:3px; background:var(--ink-card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; text-decoration:none; transition:all 0.3s; }
-.footer-social a:hover { border-color:var(--border); transform:translateY(-2px); }
-.footer-copy { font-size:11px; color:rgba(248,246,242,0.28); font-family:'Montserrat',sans-serif; letter-spacing:0.5px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--white); margin-bottom: 6px; }
+.footer-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; }
+.footer-nav { display: flex; justify-content: center; gap: 28px; list-style: none; margin-bottom: 28px; }
+.footer-nav a { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; }
+.footer-nav a:hover { color: var(--gold); }
+.footer-social { display: flex; justify-content: center; gap: 12px; margin-bottom: 28px; }
+.footer-social a { width: 38px; height: 38px; border-radius: 3px; background: var(--ink-card); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; }
+.footer-social a:hover { border-color: var(--border); transform: translateY(-2px); }
+.footer-copy { font-size: 11px; color: rgba(248,246,242,0.28); font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; }
 
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 960px) {
-  nav { padding:14px 24px; }
-  .nav-links, .nav-cta { display:none; }
-  .hamburger { display:flex; }
-  section { padding:72px 24px; }
-  .hero { padding:80px 24px 60px; }
-  .hero-content { grid-template-columns:1fr; gap:0; }
-  .hero h1 { font-size:44px; }
-  .hero-visual { display:none; }
-  .impact-bar { padding:40px 24px; }
-  .impact-grid { grid-template-columns:repeat(3,1fr); }
-  .impact-item:nth-child(3) { border-right:none; }
-  .about-grid { grid-template-columns:1fr; gap:48px; }
-  .ventures-grid { grid-template-columns:1fr; }
-  .venture-card.flagship { grid-column:1; }
-  .rec-grid { grid-template-columns:1fr; }
-  .cv-card { grid-template-columns:1fr; gap:40px; padding:32px; }
-  .cv-actions { position:static; }
-  .contact-grid { grid-template-columns:1fr; gap:40px; }
-  .section-title { font-size:34px; }
-  footer { padding:48px 24px; }
-  .footer-nav { flex-wrap:wrap; gap:14px; }
+  nav { padding: 14px 24px; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  section { padding: 72px 24px; }
+  .hero { padding: 80px 24px 60px; }
+  .hero-content { grid-template-columns: 1fr; gap: 0; }
+  .hero h1 { font-size: 44px; }
+  .hero-visual { display: none; }
+  .impact-bar { padding: 40px 24px; }
+  .impact-grid { grid-template-columns: repeat(3, 1fr); }
+  .impact-item:nth-child(3) { border-right: none; }
+  .impact-item:nth-child(4) { border-top: 1px solid var(--line); }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .ventures-grid { grid-template-columns: 1fr; }
+  .venture-card.flagship { grid-column: 1; }
+  .rec-grid { grid-template-columns: 1fr; }
+  .cv-card { grid-template-columns: 1fr; gap: 40px; padding: 32px; }
+  .cv-actions { position: static; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .section-title { font-size: 34px; }
+  footer { padding: 48px 24px; }
+  .footer-nav { flex-wrap: wrap; gap: 14px; }
 }
 </style>
-  
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
 
+<!-- Mobile Nav -->
 <div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="closeMobileMenu()">&#x2715;</button>
+  <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">&#x2715;</button>
   <a href="#home"        onclick="closeMobileMenu()">Home</a>
   <a href="#about"       onclick="closeMobileMenu()">About</a>
   <a href="#ventures"    onclick="closeMobileMenu()">Ventures</a>
@@ -435,7 +462,7 @@ footer {
 
 <nav id="navbar">
   <a href="#home" class="nav-logo">
-    <div class="nav-logo-mark">LC</div>
+    <div class="nav-logo-mark" aria-hidden="true">LC</div>
     Leila Cheikhe
   </a>
   <ul class="nav-links">
@@ -447,25 +474,26 @@ footer {
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Work With Me</a>
-  <button class="hamburger" onclick="openMobileMenu()">
+  <button class="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<div class="banner">
-  America 250 Fellow &#x2014; U.S. Department of State &nbsp;&bull;&nbsp; IBM watsonx Specialist &nbsp;&bull;&nbsp; 2&#xD7; Moroccan National Award Winner
+<div class="banner" role="banner">
+  America 250 Fellow &mdash; U.S. Department of State &nbsp;&bull;&nbsp; IBM watsonx Specialist &nbsp;&bull;&nbsp; 2&times; Moroccan National Award Winner
 </div>
 
+<!-- HERO -->
 <section id="home" class="hero">
   <div class="hero-content">
     <div class="hero-text fade-up">
       <div class="hero-tag">AI Strategy Architect &amp; Systems Builder</div>
-      <h1>Designing<br><em>Intelligent</em><br><strong>Systems</strong><br>for Africa&#x2019;s<br>1.5 Billion</h1>
+      <h1>Designing<br><em>Intelligent</em><br><strong>Systems</strong><br>for Africa's<br>1.5 Billion</h1>
       <p class="hero-meta">
         IBM watsonx Engineer
-        <span class="sep">&#x7C;</span>
+        <span class="sep">|</span>
         U.S. State Dept Fellow
-        <span class="sep">&#x7C;</span>
+        <span class="sep">|</span>
         Future CAIO
       </p>
       <p class="hero-sub">Building from Dakhla to global scale. Where others see infrastructure gaps, I architect intelligent systems.</p>
@@ -477,8 +505,9 @@ footer {
     </div>
     <div class="hero-visual fade-up">
       <div class="photo-frame">
-        <img src="assets/profile.png" alt="Leila Cheikhe &#x2014; AI Strategy Architect" class="photo-img">
-        <div class="photo-border"></div>
+        <img src="profile-pic__3_.png" alt="Leila Cheikhe &mdash; AI Strategy Architect" class="photo-img"
+             onerror="this.style.background='#0D1232';this.style.height='480px';this.removeAttribute('src');">
+        <div class="photo-border" aria-hidden="true"></div>
         <div class="photo-badge">
           <strong>Leila Cheikhe</strong>
           AI Strategy Architect
@@ -488,87 +517,110 @@ footer {
   </div>
 </section>
 
+<!-- IMPACT BAR -->
 <div class="impact-bar">
   <div class="impact-grid">
     <div class="impact-item fade-up"><div class="impact-number">6</div><div class="impact-label">Ventures<br>Built</div></div>
     <div class="impact-item fade-up"><div class="impact-number">1.5B</div><div class="impact-label">People<br>Targeted</div></div>
     <div class="impact-item fade-up"><div class="impact-number">35M+</div><div class="impact-label">Underserved<br>Users</div></div>
     <div class="impact-item fade-up"><div class="impact-number">85+</div><div class="impact-label">AI &amp; Engineering<br>Certifications</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">2&#xD7;</div><div class="impact-label">National<br>Awards</div></div>
+    <div class="impact-item fade-up"><div class="impact-number">2&times;</div><div class="impact-label">National<br>Awards</div></div>
     <div class="impact-item fade-up"><div class="impact-number">US</div><div class="impact-label">State Dept<br>Fellow</div></div>
   </div>
 </div>
 
+<!-- ABOUT -->
 <section id="about" class="about">
   <div class="container">
     <div class="about-grid">
       <div class="about-text fade-up">
         <span class="label">About</span>
         <h2 class="section-title">A Systems Builder<br><strong>From the Atlantic Edge</strong></h2>
-        <p>I was born in Dakhla &#x2014; where the Sahara meets the Atlantic, where the maps run thin and the bandwidth runs thinner. Most people who end up building global technology come from places already saturated with it. I chose a different origin story.</p>
-        <p>What Dakhla taught me was clarity. When you build without a tech ecosystem around you, you learn to see the architecture underneath everything. You learn that gaps are not absences &#x2014; they are coordinates. And I started treating them that way.</p>
+        <p>I was born in Dakhla &mdash; where the Sahara meets the Atlantic, where the maps run thin and the bandwidth runs thinner. In 2026, the U.S. Department of State selected me as an America 250 Fellow. Before that, I led ORBIT on IBM watsonx at an international hackathon. Before that, I founded a cooperative and applied AI to transform it.</p>
+        <p>What Dakhla taught me was clarity. When you build without a tech ecosystem around you, you learn to see the architecture underneath everything. Gaps are not absences &mdash; they are coordinates. I treat them that way.</p>
         <div class="pullquote">
-          <p>Africa&#x2019;s 1.5 billion people are not underserved because of a lack of intelligence. They are underserved because the systems were not designed for them. I design the systems.</p>
+          <p>Africa's 1.5 billion people are not underserved because of a lack of intelligence. They are underserved because the systems were not designed for them. I design the systems.</p>
         </div>
-        <p>I am an IBM watsonx Engineer, U.S. State Department Fellow, and founder of multiple AI ventures at the intersection of language, economy, and intelligent infrastructure. My work spans agentic AI systems, cooperative digital transformation, and the emerging field of sovereign AI for emerging markets.</p>
-        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" class="about-link">Connect on LinkedIn &#x2192;</a>
+        <p>IBM watsonx Engineer, U.S. State Department Fellow, and founder of multiple AI ventures at the intersection of language, economy, and intelligent infrastructure. My work spans agentic AI systems, cooperative digital transformation, and sovereign AI for emerging markets.</p>
+        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="about-link">Connect on LinkedIn &#x2192;</a>
       </div>
       <div class="fade-up">
         <div class="competencies">
+
+          <!-- AI Systems Architecture -->
           <div class="competency-item">
-            <div class="comp-icon">&#x1F9E0;</div>
+            <div class="comp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/><path d="M9 10h-3M15 10h3M12 7V5M12 15v-2"/></svg>
+            </div>
             <div class="comp-text">
               <div class="comp-name">AI Systems Architecture</div>
-              <div class="comp-desc">LLM Agents &#xB7; IBM watsonx &#xB7; Multi-Agent Systems &#xB7; Agentic Workflows &#xB7; Python</div>
+              <div class="comp-desc">LLM Agents &middot; IBM watsonx &middot; Multi-Agent Systems &middot; Agentic Workflows &middot; Python</div>
             </div>
           </div>
+
+          <!-- Venture Building -->
           <div class="competency-item">
-            <div class="comp-icon">&#x1F3D7;&#xFE0F;</div>
+            <div class="comp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
             <div class="comp-text">
               <div class="comp-name">Venture Building &amp; Strategy</div>
-              <div class="comp-desc">Founder &#xB7; Cooperative Leader &#xB7; AI Transformation &#xB7; Economic Systems Design</div>
+              <div class="comp-desc">Founder &middot; Cooperative Leader &middot; AI Transformation &middot; Economic Systems Design</div>
             </div>
           </div>
+
+          <!-- Digital Transformation -->
           <div class="competency-item">
-            <div class="comp-icon">&#x1F4CA;</div>
+            <div class="comp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
             <div class="comp-text">
               <div class="comp-name">Digital Transformation</div>
-              <div class="comp-desc">Emerging Markets &#xB7; Institutional AI Adoption &#xB7; Cooperative Digitization</div>
+              <div class="comp-desc">Emerging Markets &middot; Institutional AI Adoption &middot; Cooperative Digitisation</div>
             </div>
           </div>
+
+          <!-- Multilingual Intelligence -->
           <div class="competency-item">
-            <div class="comp-icon">&#x1F310;</div>
+            <div class="comp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
+            </div>
             <div class="comp-text">
               <div class="comp-name">Multilingual Intelligence</div>
-              <div class="comp-desc">Arabic &#xB7; French &#xB7; English &#xB7; Darija NLP &#xB7; Language Inclusion</div>
+              <div class="comp-desc">Arabic &middot; French &middot; English &middot; Darija NLP &middot; Language Inclusion</div>
             </div>
           </div>
+
         </div>
         <ul class="timeline">
-          <li><span class="t-year">2020</span><div class="t-dot"></div><div class="t-text">Baccalaureate &#x2014; Dakhla, Morocco</div></li>
-          <li><span class="t-year">2021</span><div class="t-dot"></div><div class="t-text">Arizona State University &#x2014; Computer Science</div></li>
-          <li><span class="t-year">2022</span><div class="t-dot"></div><div class="t-text">ISTA &#x2014; Business &amp; Finance</div></li>
-          <li><span class="t-year">2023</span><div class="t-dot"></div><div class="t-text">Founded Elite Yassmin Cooperative &#x2014; Dakhla</div></li>
-          <li><span class="t-year">2024</span><div class="t-dot"></div><div class="t-text">Financial Analyst Internship &#xB7; Ministry of Interior Internship &#xB7; 2&#xD7; National Awards</div></li>
-          <li><span class="t-year">2025</span><div class="t-dot"></div><div class="t-text">Qwasar Silicon Valley &#x2014; 60+ engineering projects &#xB7; 85+ certifications</div></li>
-          <li><span class="t-year">2026</span><div class="t-dot"></div><div class="t-text">ORBIT &#xB7; IBM watsonx &#xB7; America 250 Fellowship &#x2014; U.S. Dept of State</div></li>
+          <li><span class="t-year">2020</span><div class="t-dot"></div><div class="t-text">Baccalaureate &mdash; Dakhla, Morocco</div></li>
+          <li><span class="t-year">2021</span><div class="t-dot"></div><div class="t-text">Arizona State University &mdash; Computer Science</div></li>
+          <li><span class="t-year">2022</span><div class="t-dot"></div><div class="t-text">ISTA &mdash; Business &amp; Finance</div></li>
+          <li><span class="t-year">2023</span><div class="t-dot"></div><div class="t-text">Founded Elite Yassmin Cooperative &mdash; Dakhla</div></li>
+          <li><span class="t-year">2024</span><div class="t-dot"></div><div class="t-text">Financial Analyst Internship &middot; Ministry of Interior &middot; 2&times; National Awards</div></li>
+          <li><span class="t-year">2025</span><div class="t-dot"></div><div class="t-text">Qwasar Silicon Valley &mdash; 60+ projects &middot; 85+ certifications</div></li>
+          <li><span class="t-year">2026</span><div class="t-dot"></div><div class="t-text">ORBIT &middot; IBM watsonx &middot; America 250 Fellowship &mdash; U.S. Dept of State</div></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
+<!-- VENTURES -->
 <section id="ventures" class="ventures">
   <div class="container">
     <span class="label">Ventures</span>
     <h2 class="section-title">Intelligent Systems<br><strong>Built for Real Scale</strong></h2>
-    <p class="section-sub">Not demos. Not prototypes. Platforms and protocols architected at the intersection of AI, economy, and language &#x2014; designed to operate at continental and global scale.</p>
+    <p class="section-sub">Not demos. Not prototypes. Platforms and protocols architected at the intersection of AI, economy, and language &mdash; designed to operate at continental and global scale.</p>
 
     <div class="ventures-grid">
 
+      <!-- ORBIT -->
       <div class="venture-card fade-up">
         <div class="venture-top">
-          <div class="venture-logo-wrap"><img src="assets/orbit.png" alt="ORBIT"></div>
+          <div class="venture-logo-wrap">
+            <img src="ORBIT_1.png" alt="ORBIT" onerror="this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond,serif;font-size:22px;font-weight:600;color:#C4953A;\'>O</span>';">
+          </div>
           <div class="venture-badges">
             <span class="badge badge-live">Active</span>
             <span class="badge badge-type">AI Infrastructure</span>
@@ -576,24 +628,27 @@ footer {
         </div>
         <h3 class="venture-title">ORBIT</h3>
         <div class="venture-system">Agentic AI Workflow Orchestration System</div>
-        <p class="venture-desc">A multi-agent AI system built on IBM watsonx Orchestrate that enables intelligent, autonomous workflow management. ORBIT deploys LLM-based agents with tool use, reasoning chains, and multi-step task automation &#x2014; built to serve enterprise and institutional contexts in emerging markets.</p>
+        <p class="venture-desc">A multi-agent AI system built on IBM watsonx Orchestrate that enables intelligent, autonomous workflow management. ORBIT deploys LLM-based agents with tool use, reasoning chains, and multi-step task automation &mdash; built to serve enterprise and institutional contexts in emerging markets.</p>
         <div class="venture-impact">
           <span class="vi-label">Impact</span>
-          <span class="vi-text">Led international team of 3 engineers &#xB7; IBM Dev Day AI Hackathon &#xB7; Enterprise-grade agentic pipeline</span>
+          <span class="vi-text">Led international team of 3 engineers &middot; IBM Dev Day AI Hackathon &middot; Enterprise-grade agentic pipeline</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>Most enterprise AI deployments in Africa are outsourced, fragile, and culturally misaligned. ORBIT is infrastructure built from inside the continent &#x2014; by someone who understands what the systems actually need to do.</p>
+          <p>Most enterprise AI deployments in Africa are outsourced, fragile, and culturally misaligned. ORBIT is infrastructure built from inside the continent &mdash; by someone who understands what the systems actually need to do.</p>
         </div>
         <div class="stack-tags">
           <span class="tag">IBM watsonx</span><span class="tag">LLM Agents</span><span class="tag">Multi-Agent</span><span class="tag">Agentic AI</span><span class="tag">Python</span>
         </div>
-        <a href="https://lnkd.in/de4MzCwh" target="_blank" class="venture-link">Explore ORBIT &#x2192;</a>
+        <a href="https://lnkd.in/de4MzCwh" target="_blank" rel="noopener" class="venture-link">Explore ORBIT &#x2192;</a>
       </div>
 
+      <!-- Artisia -->
       <div class="venture-card fade-up">
         <div class="venture-top">
-          <div class="venture-logo-wrap"><img src="assets/artisia.png" alt="Artisia"></div>
+          <div class="venture-logo-wrap">
+            <img src="artisia-logo.jpeg" alt="Artisia" onerror="this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond,serif;font-size:22px;font-weight:600;color:#C4953A;\'>A</span>';">
+          </div>
           <div class="venture-badges">
             <span class="badge badge-dev">In Development</span>
             <span class="badge badge-type">AI Platform</span>
@@ -601,14 +656,14 @@ footer {
         </div>
         <h3 class="venture-title">Artisia</h3>
         <div class="venture-system">AI-Powered Artisan Economy Platform</div>
-        <p class="venture-desc">Artisia transforms Morocco&#x2019;s traditional craft sector into a globally connected, AI-native marketplace. Voice-to-listing AI, intelligent pricing, and multilingual product generation give artisans access to international buyers without language or technology barriers.</p>
+        <p class="venture-desc">Artisia transforms Morocco's traditional craft sector into a globally connected, AI-native marketplace. Voice-to-listing AI, intelligent pricing, and multilingual product generation give artisans access to international buyers without language or technology barriers.</p>
         <div class="venture-impact">
           <span class="vi-label">Impact</span>
-          <span class="vi-text">Serves Morocco&#x2019;s 2.4M artisans &#xB7; Extends award-winning Link Artisanal Dakhla &#xB7; Arabic &#xB7; French &#xB7; English</span>
+          <span class="vi-text">Serves Morocco's 2.4M artisans &middot; Extends award-winning Link Artisanal Dakhla &middot; Arabic &middot; French &middot; English</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>Morocco&#x2019;s artisan economy is one of the largest in Africa &#x2014; and nearly invisible to global markets. Artisia is the infrastructure layer that changes that permanently.</p>
+          <p>Morocco's artisan economy is one of the largest in Africa &mdash; and nearly invisible to global markets. Artisia is the infrastructure layer that changes that permanently.</p>
         </div>
         <div class="stack-tags">
           <span class="tag">OpenAI API</span><span class="tag">NLP</span><span class="tag">Voice AI</span><span class="tag">Python</span><span class="tag">E-Commerce</span>
@@ -616,9 +671,10 @@ footer {
         <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
       </div>
 
+      <!-- Elite Yassmin -->
       <div class="venture-card fade-up">
         <div class="venture-top">
-          <div class="venture-logo-wrap"><img src="assets/elite-yassmin.png.jpeg" alt="Elite Yassmin"></div>
+          <div class="venture-logo-text">EY</div>
           <div class="venture-badges">
             <span class="badge badge-live">Ongoing</span>
             <span class="badge badge-type">Cooperative AI</span>
@@ -626,14 +682,14 @@ footer {
         </div>
         <h3 class="venture-title">Elite Yassmin</h3>
         <div class="venture-system">AI-Enabled Cooperative Execution &amp; Market Deployment</div>
-        <p class="venture-desc">Morocco&#x2019;s first AI-transformed natural cosmetics cooperative. Elite Yassmin integrates AI pricing intelligence, customer segmentation, multilingual product catalogs, and digital market access &#x2014; turning a traditional women-led cooperative into a data-driven, export-ready enterprise.</p>
+        <p class="venture-desc">Morocco's first AI-transformed natural cosmetics cooperative. Elite Yassmin integrates AI pricing intelligence, customer segmentation, multilingual product catalogs, and digital market access &mdash; turning a traditional women-led cooperative into a data-driven, export-ready enterprise.</p>
         <div class="venture-impact">
           <span class="vi-label">Impact</span>
-          <span class="vi-text">Founded and led since 2023 &#xB7; Dakhla, Morocco &#xB7; Women-led cooperative &#xB7; Natural cosmetics &#xB7; Export markets</span>
+          <span class="vi-text">Founded and led since 2023 &middot; Dakhla, Morocco &middot; Women-led cooperative &middot; Natural cosmetics &middot; Export markets</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>Elite Yassmin proves that AI-driven transformation is replicable at cooperative scale &#x2014; and that is the template Africa&#x2019;s 20,000+ cooperatives need.</p>
+          <p>Elite Yassmin proves that AI-driven transformation is replicable at cooperative scale &mdash; and that is the template Africa's 20,000+ cooperatives need.</p>
         </div>
         <div class="stack-tags">
           <span class="tag">Machine Learning</span><span class="tag">Computer Vision</span><span class="tag">Python</span><span class="tag">CRM AI</span>
@@ -641,6 +697,7 @@ footer {
         <a href="#contact" class="venture-link">Case Study &#x2192;</a>
       </div>
 
+      <!-- DarijaBot -->
       <div class="venture-card fade-up">
         <div class="venture-top">
           <div class="venture-logo-text">D</div>
@@ -651,14 +708,14 @@ footer {
         </div>
         <h3 class="venture-title">DarijaBot</h3>
         <div class="venture-system">Language Inclusion Infrastructure for 35M+ Speakers</div>
-        <p class="venture-desc">The first AI assistant purpose-built for Darija &#x2014; the spoken Arabic dialect of 35 million Moroccans. Mainstream AI treats Darija as noise. DarijaBot treats it as signal. Built to close the AI language gap that excludes an entire population from the intelligence revolution.</p>
+        <p class="venture-desc">The first AI assistant purpose-built for Darija &mdash; the spoken Arabic dialect of 35 million Moroccans. Mainstream AI treats Darija as noise. DarijaBot treats it as signal. Built to close the AI language gap that excludes an entire population from the intelligence revolution.</p>
         <div class="venture-impact">
           <span class="vi-label">Impact</span>
-          <span class="vi-text">35M+ potential users &#xB7; Zero existing quality AI tools for Darija &#xB7; Language sovereignty infrastructure</span>
+          <span class="vi-text">35M+ potential users &middot; Zero existing quality AI tools for Darija &middot; Language sovereignty infrastructure</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>Language is the first gate of exclusion in AI. DarijaBot removes that gate for an entire nation &#x2014; and creates the blueprint for dozens of underrepresented languages globally.</p>
+          <p>Language is the first gate of exclusion in AI. DarijaBot removes that gate for an entire nation &mdash; and creates the blueprint for dozens of underrepresented languages globally.</p>
         </div>
         <div class="stack-tags">
           <span class="tag">LangChain</span><span class="tag">HuggingFace</span><span class="tag">OpenAI API</span><span class="tag">Arabic NLP</span>
@@ -666,6 +723,7 @@ footer {
         <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
       </div>
 
+      <!-- CoopAI -->
       <div class="venture-card fade-up">
         <div class="venture-top">
           <div class="venture-logo-text">C</div>
@@ -676,14 +734,14 @@ footer {
         </div>
         <h3 class="venture-title">CoopAI</h3>
         <div class="venture-system">AI Systems for Cooperative Economies &amp; Women-Led Networks</div>
-        <p class="venture-desc">A WhatsApp-native AI assistant serving Morocco&#x2019;s 20,000+ cooperative managers with regulatory guidance, pricing intelligence, export documentation, and financial analytics &#x2014; entirely in Arabic and French. CoopAI brings enterprise-grade AI to the grassroots economic layer.</p>
+        <p class="venture-desc">A WhatsApp-native AI assistant serving Morocco's 20,000+ cooperative managers with regulatory guidance, pricing intelligence, export documentation, and financial analytics &mdash; entirely in Arabic and French. CoopAI brings enterprise-grade AI to the grassroots economic layer.</p>
         <div class="venture-impact">
           <span class="vi-label">Impact</span>
-          <span class="vi-text">20,000+ cooperatives &#xB7; 500,000+ workers &#xB7; WhatsApp-first &#xB7; Arabic &amp; French native</span>
+          <span class="vi-text">20,000+ cooperatives &middot; 500,000+ workers &middot; WhatsApp-first &middot; Arabic &amp; French native</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>Morocco&#x2019;s cooperative sector manages billions in GDP with almost zero AI tools designed for it. CoopAI fills that gap at scale &#x2014; in the language it actually operates in.</p>
+          <p>Morocco's cooperative sector manages billions in GDP with almost zero AI tools designed for it. CoopAI fills that gap at scale &mdash; in the language it actually operates in.</p>
         </div>
         <div class="stack-tags">
           <span class="tag">LangChain</span><span class="tag">WhatsApp API</span><span class="tag">OpenAI API</span><span class="tag">Python</span>
@@ -691,6 +749,7 @@ footer {
         <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
       </div>
 
+      <!-- TANIT FLAGSHIP -->
       <div class="venture-card flagship fade-up">
         <div class="venture-top">
           <div class="venture-logo-text">T</div>
@@ -700,25 +759,20 @@ footer {
           </div>
         </div>
         <h3 class="venture-title">TANIT</h3>
-        <div class="venture-system">Shared AI Infrastructure for the Cooperative Economy</div>
-        <p class="venture-desc">The cooperative economy &#x2014; 3 million cooperatives, 1.2 billion workers, $3 trillion annually &#x2014; operates without a single AI system designed for its collective governance structure, local languages, or informal-market context. TANIT builds that infrastructure from the inside: a multilingual, WhatsApp-native AI stack that gives cooperative managers pricing intelligence, regulatory navigation, and market access tools as shared public infrastructure. Owned by the networks it serves, not extracted from them. Built by a founder who ran a cooperative before she built the AI.</p>
+        <div class="venture-system">Shared AI Infrastructure for the Global Cooperative Economy</div>
+        <p class="venture-desc">The cooperative economy &mdash; 3 million cooperatives, 1.2 billion workers, $3 trillion annually &mdash; operates without a single AI system designed for its collective governance structure, local languages, or informal-market context. TANIT builds that infrastructure from the inside: a multilingual, WhatsApp-native AI stack that gives cooperative managers pricing intelligence, regulatory navigation, and market access tools as shared public infrastructure. Owned by the networks it serves, not extracted from them. Built by a founder who ran a cooperative before she built the AI.</p>
         <div class="venture-impact">
           <span class="vi-label">Scale</span>
-          <span class="vi-text">3M cooperatives &#xB7; 1.2B workers &#xB7; 54 African nations &#xB7; 70% women-led &#xB7; $3T economy made AI-native for the first time</span>
+          <span class="vi-text">3M cooperatives &middot; 1.2B workers &middot; 54 African nations &middot; 70% women-led &middot; $3T economy made AI-native for the first time</span>
         </div>
         <div class="venture-why">
           <span class="vy-label">Why it matters</span>
-          <p>The AI transition is being designed for corporations. Cooperatives represent more workers than any other organizational form on Earth &#x2014; and they are invisible to every AI platform in existence. TANIT makes them visible, on their own terms.</p>
+          <p>The AI transition is being designed for corporations. Cooperatives represent more workers than any other organisational form on Earth &mdash; and they are invisible to every AI platform in existence. TANIT makes them visible, on their own terms.</p>
         </div>
         <div class="stack-tags">
-          <span class="tag">Sovereign AI</span>
-          <span class="tag">Cooperative Economy</span>
-          <span class="tag">IBM watsonx</span>
-          <span class="tag">Language Inclusion</span>
-          <span class="tag">Multi-Agent Workflows</span>
-          <span class="tag">Open Infrastructure</span>
-          <span class="tag">WhatsApp-Native</span>
-          <span class="tag">Development Finance</span>
+          <span class="tag">Sovereign AI</span><span class="tag">Cooperative Economy</span><span class="tag">IBM watsonx</span>
+          <span class="tag">Language Inclusion</span><span class="tag">Multi-Agent Workflows</span>
+          <span class="tag">Open Infrastructure</span><span class="tag">WhatsApp-Native</span><span class="tag">Development Finance</span>
         </div>
         <a href="#contact" class="venture-link">Inquire About TANIT &#x2192;</a>
       </div>
@@ -727,74 +781,83 @@ footer {
   </div>
 </section>
 
+<!-- RECOGNITION -->
 <section id="recognition" class="recognition">
   <div class="container">
     <span class="label">Impact &amp; Recognition</span>
     <h2 class="section-title">Selected<br><strong>Credentials &amp; Awards</strong></h2>
-    <p class="section-sub">Institutional recognition from government, global technology, and international development organizations.</p>
+    <p class="section-sub">Institutional recognition from government, global technology, and international development organisations.</p>
     <div class="rec-grid">
+
       <div class="rec-card fade-up">
         <div class="rec-year">2026</div>
         <h3 class="rec-title">America 250 Fellow</h3>
         <div class="rec-org">U.S. Department of State</div>
-        <p class="rec-desc">Selected as a U.S. State Department Fellow through the America 250 program &#x2014; designating high-potential emerging leaders in global innovation and strategic technology. One of a small cohort selected across the MENA region.</p>
+        <p class="rec-desc">Selected as a U.S. State Department Fellow through the America 250 program &mdash; designating high-potential emerging leaders in global innovation and strategic technology. One of a small cohort selected across the MENA region.</p>
       </div>
+
       <div class="rec-card fade-up">
         <div class="rec-year">2026</div>
         <h3 class="rec-title">IBM watsonx Specialist</h3>
         <div class="rec-org">IBM / Qwasar Silicon Valley</div>
-        <p class="rec-desc">Certified specialist in IBM watsonx enterprise AI. Led the ORBIT agentic AI project at the IBM Dev Day AI Demystified Hackathon &#x2014; implementing multi-agent reasoning pipelines and enterprise workflow orchestration.</p>
+        <p class="rec-desc">Certified specialist in IBM watsonx enterprise AI. Led the ORBIT agentic AI project at the IBM Dev Day AI Demystified Hackathon &mdash; implementing multi-agent reasoning pipelines and enterprise workflow orchestration.</p>
       </div>
+
       <div class="rec-card fade-up">
         <div class="rec-year">2024</div>
-        <h3 class="rec-title">National Award &#x2014; Link Artisanal Dakhla</h3>
-        <div class="rec-org">Kingdom of Morocco &#x2014; Ministry Level</div>
-        <p class="rec-desc">State-level national recognition for the Link Artisanal Dakhla initiative &#x2014; an AI-powered artisan market access program serving traditional craftspeople in Morocco&#x2019;s southern Atlantic region.</p>
+        <h3 class="rec-title">National Award &mdash; Link Artisanal</h3>
+        <div class="rec-org">Kingdom of Morocco &mdash; Ministry Level</div>
+        <p class="rec-desc">State-level national recognition for the Link Artisanal Dakhla initiative &mdash; an AI-powered artisan market access programme serving traditional craftspeople in Morocco's southern Atlantic region.</p>
       </div>
+
       <div class="rec-card fade-up">
-        <div class="rec-year">2024</div>
-        <h3 class="rec-title">2&#xD7; Moroccan National Award Winner</h3>
-        <div class="rec-org">Kingdom of Morocco</div>
-        <p class="rec-desc">Recognized twice at the national government level for innovation, entrepreneurship, and community impact &#x2014; a rare distinction for an engineer operating from Morocco&#x2019;s southern region, far from any capital city.</p>
+        <div class="rec-year">2023</div>
+        <h3 class="rec-title">National Solidarity Generation Award</h3>
+        <div class="rec-org">Moroccan Ministry of Tourism</div>
+        <p class="rec-desc">Recognised at the national government level for innovation, entrepreneurship, and community impact &mdash; a rare distinction for an engineer operating from Morocco's southern region, far from any capital city.</p>
       </div>
+
       <div class="rec-card fade-up">
         <div class="rec-year">2025</div>
         <h3 class="rec-title">85+ Technical Certifications</h3>
-        <div class="rec-org">IBM &#xB7; Coursera &#xB7; Qwasar &#xB7; Google &#xB7; Microsoft</div>
-        <p class="rec-desc">Completed 85+ professional certifications in AI engineering, cloud infrastructure, cybersecurity, and data science &#x2014; across Qwasar Silicon Valley&#x2019;s 60+ project curriculum and leading global platforms.</p>
+        <div class="rec-org">IBM &middot; Coursera &middot; Qwasar &middot; Google &middot; Microsoft</div>
+        <p class="rec-desc">Completed 85+ professional certifications in AI engineering, cloud infrastructure, cybersecurity, and data science &mdash; across Qwasar Silicon Valley's 60+ project curriculum and leading global platforms.</p>
       </div>
+
       <div class="rec-card fade-up">
         <div class="rec-year">2026</div>
         <h3 class="rec-title">IBM Dev Day Hackathon Lead</h3>
         <div class="rec-org">IBM &amp; Qwasar Silicon Valley</div>
-        <p class="rec-desc">Led an international team of three engineers at the IBM Dev Day AI Demystified Hackathon to build ORBIT &#x2014; a production-grade agentic AI orchestration system, delivered under competition conditions.</p>
+        <p class="rec-desc">Led an international team of three engineers at the IBM Dev Day AI Demystified Hackathon to build ORBIT &mdash; a production-grade agentic AI orchestration system, delivered under competition conditions.</p>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- CV -->
 <section id="cv" class="cv-section">
   <div class="container">
     <div class="cv-card fade-up">
       <div>
         <span class="label">Executive Profile</span>
         <h2 class="cv-title">Credentials &amp;<br><strong>Experience</strong></h2>
-        <p class="cv-intro">IBM watsonx Engineer &#xB7; AI Strategy Architect &#xB7; U.S. State Department Fellow &#xB7; Venture Builder &#xB7; Cooperative Leader. Available for global AI strategy roles, fellowships, research partnerships, and advisory engagements.</p>
+        <p class="cv-intro">IBM watsonx Engineer &middot; AI Strategy Architect &middot; U.S. State Department Fellow &middot; Venture Builder &middot; Cooperative Leader. Available for global AI strategy roles, fellowships, research partnerships, and advisory engagements.</p>
         <ul class="cv-list">
-          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>America 250 Fellow</strong> &#x2014; U.S. Department of State. Selected for high-potential leadership in global innovation and strategic technology.</span></li>
-          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>IBM watsonx Specialist &amp; ORBIT System Lead</strong> &#x2014; Enterprise-grade agentic AI on IBM infrastructure. International team lead, IBM Dev Day Hackathon.</span></li>
-          <li><span class="cv-yr">2025</span><span class="cv-txt"><strong>Qwasar Silicon Valley</strong> &#x2014; 60+ engineering projects across AI systems, fullstack, cybersecurity, and data science. 85+ certifications.</span></li>
-          <li><span class="cv-yr">2024</span><span class="cv-txt"><strong>Financial Analyst &amp; Ministry of Interior Internship</strong> &#x2014; Institutional finance and public sector digital governance, Morocco.</span></li>
-          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Founder &#x2014; Elite Yassmin Cooperative</strong> &#x2014; AI-transformed women-led natural cosmetics cooperative, Dakhla. 2&#xD7; National Award recognition.</span></li>
-          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Link Artisanal Dakhla &#x2014; National Award</strong> &#x2014; Government-recognized AI artisan market access platform, Ministry of Morocco.</span></li>
-          <li><span class="cv-yr">2021</span><span class="cv-txt"><strong>Arizona State University</strong> &#x2014; Computer Science coursework. ISTA Business &amp; Finance program, Morocco.</span></li>
+          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>America 250 Fellow</strong> &mdash; U.S. Department of State. Selected for high-potential leadership in global innovation and strategic technology.</span></li>
+          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>IBM watsonx Specialist &amp; ORBIT System Lead</strong> &mdash; Enterprise-grade agentic AI on IBM infrastructure. International team lead, IBM Dev Day Hackathon.</span></li>
+          <li><span class="cv-yr">2025</span><span class="cv-txt"><strong>Qwasar Silicon Valley</strong> &mdash; 60+ engineering projects across AI systems, fullstack, cybersecurity, and data science. 85+ certifications.</span></li>
+          <li><span class="cv-yr">2024</span><span class="cv-txt"><strong>Financial Analyst &amp; Ministry of Interior Internship</strong> &mdash; Institutional finance and public sector digital governance, Morocco.</span></li>
+          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Founder &mdash; Elite Yassmin Cooperative</strong> &mdash; AI-transformed women-led natural cosmetics cooperative, Dakhla. 2&times; National Award recognition.</span></li>
+          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Link Artisanal Dakhla &mdash; National Award</strong> &mdash; Government-recognised AI artisan market access platform, Ministry of Morocco.</span></li>
+          <li><span class="cv-yr">2021</span><span class="cv-txt"><strong>Arizona State University</strong> &mdash; Computer Science coursework. ISTA Business &amp; Finance programme, Morocco.</span></li>
         </ul>
       </div>
       <div class="cv-actions">
         <a href="mailto:leilacheikhee@gmail.com?subject=CV%20Request%20%E2%80%94%20Leila%20Cheikhe" class="btn-cv">
           Request Executive CV
         </a>
-        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" class="btn-cv-out">
+        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="btn-cv-out">
           View LinkedIn Profile
         </a>
         <p class="cv-note">Executive CV available upon request. Response within 48 hours.</p>
@@ -803,63 +866,64 @@ footer {
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="container">
     <span class="label">Contact</span>
-    <h2 class="section-title">Let&#x2019;s Build<br><strong>What Matters</strong></h2>
+    <h2 class="section-title">Let's Build<br><strong>What Matters</strong></h2>
     <p class="section-sub">Open to global AI strategy roles, fellowships, research collaborations, advisory engagements, and co-building.</p>
     <div class="contact-grid">
       <div class="fade-up">
         <span class="label">Open To</span>
         <ul class="open-to">
           <li>International AI strategy and executive leadership roles</li>
-          <li>Global fellowships &#x2014; WEF, MIT Solve, USAID, Open Society</li>
+          <li>Global fellowships &mdash; WEF, MIT Solve, USAID, Open Society</li>
           <li>Research partnerships on AI for Africa and MENA</li>
           <li>Speaking engagements and panel participation</li>
           <li>Consulting and advisory projects</li>
           <li>Venture partnerships and co-building</li>
         </ul>
-        <span class="label" style="margin-top:8px;">Connect</span>
+        <span class="label" style="margin-top: 8px;">Connect</span>
         <div class="social-items">
-          <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="social-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             <div class="s-info"><div class="s-name">LinkedIn</div><div class="s-handle">leila-cheikhe-661368267</div></div>
-            <span style="color:var(--gold)">&#x2192;</span>
+            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
           </a>
-          <a href="https://github.com/leilacheikhee-web" target="_blank" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/leilacheikhee-web" target="_blank" rel="noopener" class="social-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             <div class="s-info"><div class="s-name">GitHub</div><div class="s-handle">leilacheikhee-web</div></div>
-            <span style="color:var(--gold)">&#x2192;</span>
+            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
           </a>
-          <a href="https://leilacheikhe.substack.com" target="_blank" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <div class="s-info"><div class="s-name">Newsletter</div><div class="s-handle">AI for Africa &#x2014; Substack</div></div>
-            <span style="color:var(--gold)">&#x2192;</span>
+          <a href="https://leilacheikhe.substack.com" target="_blank" rel="noopener" class="social-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="s-info"><div class="s-name">Newsletter</div><div class="s-handle">AI for Africa &mdash; Substack</div></div>
+            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
           </a>
           <a href="mailto:leilacheikhee@gmail.com" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
             <div class="s-info"><div class="s-name">Email</div><div class="s-handle">leilacheikhee@gmail.com</div></div>
-            <span style="color:var(--gold)">&#x2192;</span>
+            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
           </a>
         </div>
       </div>
       <div class="contact-form fade-up">
         <h3 class="form-title">Send a Message</h3>
-        <form id="contactForm">
+        <form id="contactForm" novalidate>
           <div class="form-group">
-            <label class="form-label">Full Name</label>
-            <input type="text" id="fname" class="form-input" placeholder="Your full name" required>
+            <label class="form-label" for="fname">Full Name</label>
+            <input type="text" id="fname" class="form-input" placeholder="Your full name" required autocomplete="name">
           </div>
           <div class="form-group">
-            <label class="form-label">Email</label>
-            <input type="email" id="femail" class="form-input" placeholder="your@email.com" required>
+            <label class="form-label" for="femail">Email</label>
+            <input type="email" id="femail" class="form-input" placeholder="your@email.com" required autocomplete="email">
           </div>
           <div class="form-group">
-            <label class="form-label">Organization</label>
-            <input type="text" id="forg" class="form-input" placeholder="Company, NGO, University (optional)">
+            <label class="form-label" for="forg">Organisation</label>
+            <input type="text" id="forg" class="form-input" placeholder="Company, NGO, University (optional)" autocomplete="organization">
           </div>
           <div class="form-group">
-            <label class="form-label">Subject</label>
+            <label class="form-label" for="fsubject">Subject</label>
             <select id="fsubject" class="form-select">
               <option value="Job Opportunity">Job Opportunity</option>
               <option value="Fellowship or Grant">Fellowship or Grant</option>
@@ -871,7 +935,7 @@ footer {
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label">Message</label>
+            <label class="form-label" for="fmessage">Message</label>
             <textarea id="fmessage" class="form-textarea" placeholder="Tell me more..." required></textarea>
           </div>
           <button type="button" id="submitBtn" onclick="submitContactForm()" class="form-submit">Send Message &#x2192;</button>
@@ -882,9 +946,10 @@ footer {
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo">Leila Cheikhe</div>
-  <div class="footer-tag">AI Strategy Architect &#xB7; Builder of Intelligent Systems &#xB7; Future CAIO</div>
+  <div class="footer-tag">AI Strategy Architect &middot; Builder of Intelligent Systems &middot; Future CAIO</div>
   <ul class="footer-nav">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -894,93 +959,95 @@ footer {
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="footer-social">
-    <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" title="LinkedIn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(248,246,242,0.5)"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" title="LinkedIn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(248,246,242,0.45)" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a>
-    <a href="https://github.com/leilacheikhee-web" target="_blank" title="GitHub">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(248,246,242,0.5)"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    <a href="https://github.com/leilacheikhee-web" target="_blank" rel="noopener" title="GitHub">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(248,246,242,0.45)" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
     </a>
-    <a href="https://leilacheikhe.substack.com" target="_blank" title="Newsletter">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.5)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <a href="https://leilacheikhe.substack.com" target="_blank" rel="noopener" title="Newsletter">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.45)" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     </a>
     <a href="mailto:leilacheikhee@gmail.com" title="Email">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.5)" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.45)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
     </a>
   </div>
-  <div class="footer-copy">&#x00A9; 2026 Leila Cheikhe &#xB7; leilacheikhe.com &#xB7; All rights reserved.</div>
+  <div class="footer-copy">&copy; 2026 Leila Cheikhe &middot; leilacheikhe.com &middot; All rights reserved.</div>
 </footer>
 
 <script>
-async function submitContactForm() {
-  var btn  = document.getElementById('submitBtn');
-  var note = document.getElementById('formNote');
-  var name    = document.getElementById('fname').value.trim();
-  var email   = document.getElementById('femail').value.trim();
-  var org     = document.getElementById('forg').value.trim();
-  var subject = document.getElementById('fsubject').value;
-  var message = document.getElementById('fmessage').value.trim();
-  if (!name || !email || !message) {
-    note.textContent = 'Please complete your name, email, and message.';
-    note.style.color = '#F59E0B';
-    return;
-  }
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  note.style.color = 'rgba(248,246,242,0.4)';
-  note.textContent = 'Sending your message...';
-  try {
-    var res = await fetch('https://formspree.io/f/mqegwdlp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ name: name, email: email, organization: org, subject: subject, message: message })
-    });
-    var result = await res.json();
-    if (res.ok) {
-      btn.textContent = 'Message Sent';
-      btn.style.background = '#0EA672';
-      note.textContent = 'Thank you. Leila will review your message personally.';
-      note.style.color = '#0EA672';
-      document.getElementById('contactForm').reset();
-    } else {
-      throw new Error(result.error || 'Submission failed');
+(function () {
+  'use strict';
+
+  // Contact form
+  async function submitContactForm() {
+    var btn     = document.getElementById('submitBtn');
+    var note    = document.getElementById('formNote');
+    var name    = document.getElementById('fname').value.trim();
+    var email   = document.getElementById('femail').value.trim();
+    var org     = document.getElementById('forg').value.trim();
+    var subject = document.getElementById('fsubject').value;
+    var message = document.getElementById('fmessage').value.trim();
+    if (!name || !email || !message) {
+      note.textContent = 'Please complete your name, email, and message.';
+      note.style.color = '#F59E0B';
+      return;
     }
-  } catch(err) {
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
-    btn.style.background = '';
-    note.textContent = 'Something went wrong. Email leilacheikhee@gmail.com directly.';
-    note.style.color = '#F59E0B';
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    note.textContent = '';
+    try {
+      var res = await fetch('https://formspree.io/f/mqegwdlp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name: name, email: email, organization: org, subject: subject, message: message })
+      });
+      var result = await res.json();
+      if (res.ok) {
+        btn.textContent = 'Message Sent';
+        btn.style.background = '#0EA672';
+        note.textContent = 'Thank you. Leila will review your message personally.';
+        note.style.color = '#0EA672';
+        document.getElementById('contactForm').reset();
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (err) {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      btn.style.background = '';
+      note.textContent = 'Something went wrong. Email leilacheikhee@gmail.com directly.';
+      note.style.color = '#F59E0B';
+    }
   }
-}
-function openMobileMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
-function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-document.querySelectorAll('a[href^="#"]').forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    var t = document.querySelector(link.getAttribute('href'));
-    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  window.submitContactForm = submitContactForm;
+
+  // Mobile menu
+  window.openMobileMenu  = function () { document.getElementById('mobileMenu').classList.add('open'); };
+  window.closeMobileMenu = function () { document.getElementById('mobileMenu').classList.remove('open'); };
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var target = document.querySelector(link.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
   });
-});
-var obs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.08 });
-document.querySelectorAll('.fade-up').forEach(function(el) { obs.observe(el); });
-window.addEventListener('scroll', function() {
-  var nav = document.getElementById('navbar');
-  nav.style.background = window.scrollY > 50
-    ? 'rgba(5,8,26,0.98)'
-    : 'rgba(5,8,26,0.92)';
-});
+
+  // Scroll-reveal
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(function (el) { observer.observe(el); });
+
+  // Nav background
+  window.addEventListener('scroll', function () {
+    document.getElementById('navbar').style.background =
+      window.scrollY > 50 ? 'rgba(5,8,26,0.99)' : 'rgba(5,8,26,0.94)';
+  }, { passive: true });
+})();
 </script>
 </body>
 </html>
-
-<style>.logo{height:36px;width:auto;display:block;}</style>
-
-<style>.logo{height:36px;width:auto;display:block;}</style>
-
-
-
-
-
