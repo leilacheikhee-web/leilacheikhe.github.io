@@ -3,466 +3,542 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leila Cheikhe | AI Strategy Architect &amp; Systems Builder</title>
-<meta name="description" content="AI Strategy Architect designing intelligent systems for Africa's 1.5 billion. IBM watsonx Engineer, U.S. State Department America 250 Fellow, Founder of TANIT, Artisia, and CoopAI. Building from Dakhla to global scale.">
+<title>Leila Cheikhe — AI Strategy Architect</title>
+<meta name="description" content="AI Strategy Architect designing intelligent systems for Africa's 1.5 billion. IBM watsonx Engineer. U.S. State Department America 250 Fellow. Building from Dakhla to global scale.">
 <meta property="og:title" content="Leila Cheikhe — AI Strategy Architect">
 <meta property="og:description" content="IBM watsonx Engineer · U.S. State Dept Fellow · Designing intelligent infrastructure for Africa's 1.5 billion.">
 <meta property="og:image" content="assets/profile.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leilacheikhe.com">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2305081A'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='14' font-weight='700' fill='%23C4953A'>LC</text></svg>">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --ink:       #05081A;
-  --ink-card:  #090D25;
-  --ink-mid:   #0D1232;
-  --gold:      #C4953A;
-  --gold-lt:   #D4AD5A;
-  --gold-pale: rgba(196,149,58,0.07);
-  --white:     #F8F6F2;
-  --muted:     rgba(248,246,242,0.52);
-  --border:    rgba(196,149,58,0.18);
-  --line:      #151C3B;
+/* ─────────────────────────────────────────────
+   TOKENS
+───────────────────────────────────────────── */
+:root{
+  --bg:#04060F;
+  --surface:#080C1C;
+  --raised:#0C1128;
+  --gold:#C8913A;
+  --gold-lt:#D9AB5C;
+  --gold-dim:rgba(200,145,58,.13);
+  --gold-line:rgba(200,145,58,.18);
+  --chalk:#F0EDE8;
+  --ch60:rgba(240,237,232,.60);
+  --ch38:rgba(240,237,232,.38);
+  --ch18:rgba(240,237,232,.10);
+  --rule:rgba(240,237,232,.065);
 }
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  background: var(--ink); color: var(--white);
-  font-family: 'Inter', sans-serif; line-height: 1.75; overflow-x: hidden;
-}
-h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
-img { max-width: 100%; display: block; }
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--ink); }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;background:var(--bg);}
+body{background:var(--bg);color:var(--chalk);font-family:'DM Sans',system-ui,sans-serif;line-height:1.72;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
 
-/* ─── NAV ─────────────────────────────────────────────────── */
-nav {
-  position: fixed; top: 0; width: 100%; z-index: 1000;
-  padding: 16px 64px; display: flex; align-items: center; justify-content: space-between;
-  background: rgba(5,8,26,0.94); backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(196,149,58,0.08); transition: background 0.3s;
-}
-.nav-logo {
-  font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600;
-  color: var(--white); text-decoration: none; letter-spacing: 0.3px;
-  display: flex; align-items: center; gap: 12px;
-}
-.nav-logo-mark {
-  width: 34px; height: 34px; border: 1px solid rgba(196,149,58,0.4); border-radius: 3px;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 700; color: var(--gold);
-  flex-shrink: 0;
-}
-.nav-links { display: flex; gap: 36px; list-style: none; }
-.nav-links a {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  color: rgba(248,246,242,0.62); text-decoration: none; transition: color 0.25s;
-}
-.nav-links a:hover { color: var(--gold); }
-.nav-cta {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 1px; text-transform: uppercase;
-  background: var(--gold); color: var(--ink); padding: 10px 22px;
-  border-radius: 3px; text-decoration: none; transition: all 0.25s;
-}
-.nav-cta:hover { background: var(--gold-lt); transform: translateY(-1px); }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; border-radius: 1px; }
-.mobile-menu {
-  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
-  background: var(--ink); z-index: 999; flex-direction: column;
-  align-items: center; justify-content: center; gap: 28px;
-}
-.mobile-menu.open { display: flex; }
-.mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--white); text-decoration: none; transition: color 0.25s; letter-spacing: 1px; }
-.mobile-menu a:hover { color: var(--gold); }
-.mobile-close { position: absolute; top: 24px; right: 28px; background: none; border: none; color: var(--white); font-size: 28px; cursor: pointer; line-height: 1; }
-
-/* ─── BANNER ──────────────────────────────────────────────── */
-.banner {
-  background: var(--gold); color: var(--ink); text-align: center; padding: 11px 20px;
-  margin-top: 65px; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+/* noise */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
 }
 
-/* ─── LAYOUT ──────────────────────────────────────────────── */
-section { padding: 108px 64px; }
-.container { max-width: 1180px; margin: 0 auto; }
-.label {
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
-  letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
-  margin-bottom: 14px; display: block;
+/* ─────────────────────────────────────────────
+   NAV
+───────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;width:100%;z-index:100;
+  padding:17px 64px;display:flex;align-items:center;justify-content:space-between;
+  background:rgba(4,6,15,.86);backdrop-filter:blur(28px) saturate(160%);
+  border-bottom:1px solid var(--rule);transition:background .3s;
 }
-.section-title { font-size: 46px; font-weight: 300; color: var(--white); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 16px; }
-.section-title strong { font-weight: 600; }
-.section-sub { font-size: 16px; color: var(--muted); margin-bottom: 64px; max-width: 580px; line-height: 1.85; }
-.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
+.nav-logo{
+  display:flex;align-items:center;gap:11px;
+  font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;
+  color:var(--chalk);letter-spacing:.2px;
+}
+.nav-lc{
+  width:30px;height:30px;border:1px solid var(--gold-line);border-radius:3px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;color:var(--gold);
+}
+.nav-links{display:flex;gap:32px;list-style:none;}
+.nav-links a{
+  font-family:'DM Mono',monospace;font-size:10.5px;font-weight:500;
+  letter-spacing:1.8px;text-transform:uppercase;color:var(--ch60);transition:color .22s;
+}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:1.2px;text-transform:uppercase;
+  background:var(--gold);color:#04060F;padding:10px 22px;border-radius:3px;transition:all .22s;
+}
+.nav-cta:hover{background:var(--gold-lt);transform:translateY(-1px);}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.burger span{display:block;width:22px;height:1.5px;background:var(--chalk);border-radius:1px;transition:all .3s;}
+.mob-menu{
+  display:none;position:fixed;inset:0;background:var(--bg);z-index:99;
+  flex-direction:column;align-items:center;justify-content:center;gap:28px;
+}
+.mob-menu.open{display:flex;}
+.mob-menu a{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--chalk);transition:color .22s;}
+.mob-menu a:hover{color:var(--gold);}
+.mob-close{position:absolute;top:24px;right:28px;background:none;border:none;color:var(--chalk);font-size:26px;cursor:pointer;line-height:1;}
 
-/* ─── HERO ────────────────────────────────────────────────── */
-.hero {
-  min-height: 100vh; display: flex; align-items: center;
-  padding: 100px 64px 80px; position: relative; overflow: hidden;
-}
-.hero::before {
-  content: ''; position: absolute; top: 0; right: 0; width: 55%; height: 100%;
-  background: radial-gradient(ellipse at 80% 40%, rgba(196,149,58,0.05) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--line); }
-.hero-content {
-  max-width: 1180px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1fr 400px; gap: 80px; align-items: center;
-}
-.hero-tag {
-  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px;
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
-}
-.hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
-.hero h1 {
-  font-size: 68px; font-weight: 300; line-height: 1.07;
-  letter-spacing: -1px; color: var(--white); margin-bottom: 28px;
-}
-.hero h1 em { font-style: italic; font-weight: 300; color: var(--gold); }
-.hero h1 strong { font-weight: 600; }
-.hero-meta {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500;
-  letter-spacing: 1px; color: var(--muted); margin-bottom: 12px; text-transform: uppercase;
-  display: flex; align-items: center; flex-wrap: wrap; gap: 4px;
-}
-.hero-meta .sep { color: rgba(196,149,58,0.4); margin: 0 6px; }
-.hero-sub {
-  font-family: 'Cormorant Garamond', serif; font-style: italic;
-  font-size: 19px; color: rgba(248,246,242,0.58); margin-bottom: 48px; line-height: 1.75;
-}
-.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-primary {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  background: var(--gold); color: var(--ink); padding: 14px 30px;
-  border-radius: 3px; text-decoration: none; transition: all 0.3s;
-}
-.btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(196,149,58,0.25); }
-.btn-secondary {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  background: transparent; color: var(--white); padding: 14px 30px;
-  border-radius: 3px; border: 1px solid rgba(248,246,242,0.22); text-decoration: none; transition: all 0.3s;
-}
-.btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
-.btn-ghost {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  background: transparent; color: var(--gold); padding: 14px 30px;
-  border-radius: 3px; border: 1px solid rgba(196,149,58,0.3); text-decoration: none; transition: all 0.3s;
-}
-.btn-ghost:hover { background: var(--gold-pale); border-color: var(--gold); transform: translateY(-2px); }
-.hero-visual { position: relative; display: flex; justify-content: flex-end; }
-.photo-frame { position: relative; width: 360px; }
-.photo-img {
-  width: 100%; height: 480px; object-fit: cover; object-position: top center;
-  border-radius: 2px; display: block;
-}
-.photo-border {
-  position: absolute; top: -14px; right: -14px; bottom: 14px; left: 14px;
-  border: 1px solid rgba(196,149,58,0.25); border-radius: 2px; z-index: -1;
-}
-.photo-badge {
-  position: absolute; bottom: -20px; left: -20px;
-  background: var(--ink-card); border: 1px solid var(--border); border-radius: 3px;
-  padding: 16px 20px; font-family: 'Montserrat', sans-serif; font-size: 10px;
-  color: var(--muted); letter-spacing: 1px; text-transform: uppercase;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-}
-.photo-badge strong {
-  display: block; font-size: 17px; font-family: 'Cormorant Garamond', serif;
-  color: var(--gold); font-weight: 600; letter-spacing: 0; margin-bottom: 3px; text-transform: none;
+/* ─────────────────────────────────────────────
+   CREDENTIAL STRIP
+───────────────────────────────────────────── */
+.strip{
+  background:var(--gold);color:#04060F;text-align:center;padding:10px 20px;
+  margin-top:65px;font-family:'DM Mono',monospace;font-size:10px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
 }
 
-/* ─── IMPACT BAR ──────────────────────────────────────────── */
-.impact-bar {
-  background: var(--ink-card); padding: 52px 64px;
-  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+/* ─────────────────────────────────────────────
+   SHARED
+───────────────────────────────────────────── */
+section{padding:112px 64px;position:relative;}
+.wrap{max-width:1160px;margin:0 auto;}
+.eye{
+  font-family:'DM Mono',monospace;font-size:10px;font-weight:500;
+  letter-spacing:3px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:16px;display:block;
 }
-.impact-grid {
-  max-width: 1180px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(6, 1fr); gap: 0;
+.h2{font-size:48px;font-weight:300;line-height:1.12;letter-spacing:-.5px;color:var(--chalk);margin-bottom:18px;}
+.h2 strong{font-weight:600;}
+.sub{font-size:16px;color:var(--ch60);max-width:560px;line-height:1.85;margin-bottom:64px;}
+.fade{opacity:0;transform:translateY(24px);transition:opacity .62s ease,transform .62s ease;}
+.fade.in{opacity:1;transform:translateY(0);}
+
+/* BUTTONS */
+.btn-gold{
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  background:var(--gold);color:#04060F;padding:14px 30px;border-radius:3px;transition:all .25s;
 }
-.impact-item { text-align: center; padding: 12px; border-right: 1px solid var(--line); }
-.impact-item:last-child { border-right: none; }
-.impact-number {
-  font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 600;
-  color: var(--gold); line-height: 1; margin-bottom: 8px;
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 12px 32px rgba(200,145,58,.22);}
+.btn-out{
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  background:transparent;color:var(--chalk);padding:14px 30px;border-radius:3px;
+  border:1px solid rgba(240,237,232,.18);transition:all .25s;
 }
-.impact-label {
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); line-height: 1.55;
+.btn-out:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+.btn-ghost{
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  background:transparent;color:var(--gold);padding:14px 30px;border-radius:3px;
+  border:1px solid rgba(200,145,58,.28);transition:all .25s;
+}
+.btn-ghost:hover{background:var(--gold-dim);border-color:var(--gold);}
+
+/* ─────────────────────────────────────────────
+   HERO
+───────────────────────────────────────────── */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding:100px 64px 80px;position:relative;overflow:hidden;
+}
+.hero-glow{
+  position:absolute;top:-20%;right:-10%;width:60%;height:130%;
+  background:radial-gradient(ellipse at 60% 40%,rgba(200,145,58,.065) 0%,transparent 68%);
+  pointer-events:none;
+}
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to right,rgba(240,237,232,.022) 1px,transparent 1px),
+             linear-gradient(to bottom,rgba(240,237,232,.022) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(ellipse at 60% 50%,black 20%,transparent 75%);
+}
+.hero-in{
+  max-width:1160px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:10px;margin-bottom:36px;
+  font-family:'DM Mono',monospace;font-size:10px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;color:var(--gold);
+}
+.hero-tag::before{content:'';width:32px;height:1px;background:var(--gold);}
+.hero h1{
+  font-size:74px;font-weight:300;line-height:1.04;
+  letter-spacing:-1.5px;color:var(--chalk);margin-bottom:24px;
+}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:300;}
+.hero h1 strong{font-weight:600;}
+.hero-creds{
+  display:flex;align-items:center;flex-wrap:wrap;gap:6px;
+  font-family:'DM Mono',monospace;font-size:10px;font-weight:500;
+  letter-spacing:1px;text-transform:uppercase;color:var(--ch38);margin-bottom:14px;
+}
+.hero-creds .sep{color:rgba(200,145,58,.35);margin:0 4px;}
+.hero-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:20px;color:var(--ch60);margin-bottom:52px;line-height:1.7;
+}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;}
+.hero-visual{position:relative;display:flex;justify-content:flex-end;}
+.photo-wrap{position:relative;width:340px;}
+.photo-img{
+  width:100%;height:460px;object-fit:cover;object-position:top center;
+  border-radius:2px;display:block;filter:grayscale(8%) contrast(1.04);
+}
+.photo-frame{
+  position:absolute;top:-12px;right:-12px;bottom:12px;left:12px;
+  border:1px solid rgba(200,145,58,.2);border-radius:2px;z-index:-1;
+}
+.photo-badge{
+  position:absolute;bottom:-16px;left:-16px;
+  background:var(--surface);border:1px solid var(--gold-line);border-radius:3px;
+  padding:14px 18px;font-family:'DM Mono',monospace;font-size:9px;
+  color:var(--ch60);letter-spacing:1.5px;text-transform:uppercase;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.photo-badge strong{
+  display:block;font-family:'Cormorant Garamond',serif;font-size:16px;
+  color:var(--gold);font-weight:600;letter-spacing:0;margin-bottom:2px;text-transform:none;
+}
+.hero-rule{position:absolute;bottom:0;left:0;width:100%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--rule) 30%,var(--rule) 70%,transparent);}
+
+/* ─────────────────────────────────────────────
+   METRICS
+───────────────────────────────────────────── */
+.metrics{
+  background:var(--surface);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:48px 64px;
+}
+.m-grid{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(6,1fr);
+}
+.metric{text-align:center;padding:12px;border-right:1px solid var(--rule);}
+.metric:last-child{border-right:none;}
+.mn{
+  font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;
+  color:var(--gold);line-height:1;margin-bottom:8px;
+}
+.ml{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;
+  letter-spacing:1.5px;text-transform:uppercase;color:var(--ch38);line-height:1.65;
 }
 
-/* ─── ABOUT ───────────────────────────────────────────────── */
-.about { background: var(--ink-mid); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
-.about-text p { font-size: 15px; color: rgba(248,246,242,0.75); margin-bottom: 22px; line-height: 1.95; }
-.pullquote {
-  border-left: 2px solid var(--gold); padding: 22px 28px; margin: 36px 0;
-  background: rgba(196,149,58,0.04);
+/* ─────────────────────────────────────────────
+   ABOUT
+───────────────────────────────────────────── */
+.about{background:var(--raised);}
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start;}
+.about-text p{font-size:15px;color:rgba(240,237,232,.72);margin-bottom:22px;line-height:1.95;}
+.pull{border-left:2px solid var(--gold);padding:20px 26px;margin:36px 0;background:rgba(200,145,58,.04);}
+.pull p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:rgba(240,237,232,.82);line-height:1.75;}
+.a-link{
+  font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:8px;transition:opacity .25s;
 }
-.pullquote p {
-  font-family: 'Cormorant Garamond', serif; font-style: italic;
-  font-size: 19px; color: rgba(248,246,242,0.82); line-height: 1.75; margin: 0;
+.a-link:hover{opacity:.65;}
+.comps{margin-bottom:44px;}
+.comp{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule);}
+.comp:first-child{border-top:1px solid var(--rule);}
+.comp-ico{
+  width:36px;height:36px;border-radius:3px;background:var(--gold-dim);
+  border:1px solid var(--gold-line);display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
-.about-link {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  color: var(--gold); text-decoration: none; transition: opacity 0.3s;
-  display: inline-flex; align-items: center; gap: 8px;
-}
-.about-link:hover { opacity: 0.68; }
-.competencies { margin-bottom: 44px; }
-.competency-item {
-  display: flex; align-items: flex-start; gap: 16px;
-  padding: 18px 0; border-bottom: 1px solid var(--line);
-}
-.competency-item:first-child { border-top: 1px solid var(--line); }
-.comp-icon {
-  width: 38px; height: 38px; border-radius: 3px;
-  background: var(--gold-pale); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.comp-icon svg { width: 18px; height: 18px; stroke: var(--gold); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.comp-text { flex: 1; }
-.comp-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: var(--white); margin-bottom: 3px; }
-.comp-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
-.timeline { list-style: none; }
-.timeline li { display: flex; gap: 18px; margin-bottom: 18px; }
-.t-year { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: var(--gold); min-width: 44px; padding-top: 2px; letter-spacing: 0.5px; }
-.t-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; margin-top: 7px; flex-shrink: 0; box-shadow: 0 0 8px rgba(196,149,58,0.4); }
-.t-text { font-size: 13px; color: rgba(248,246,242,0.68); line-height: 1.65; }
+.comp-ico svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.cn{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--chalk);margin-bottom:2px;}
+.cd{font-size:12px;color:var(--ch60);line-height:1.6;}
+.tl{list-style:none;}
+.tl li{display:flex;gap:16px;margin-bottom:15px;}
+.tl-yr{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--gold);min-width:40px;padding-top:2px;letter-spacing:.5px;}
+.tl-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;margin-top:8px;flex-shrink:0;box-shadow:0 0 8px rgba(200,145,58,.4);}
+.tl-text{font-size:13px;color:var(--ch60);line-height:1.65;}
 
-/* ─── VENTURES ────────────────────────────────────────────── */
-.ventures { background: var(--ink); }
-.ventures-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-.venture-card {
-  background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px;
-  padding: 36px; transition: all 0.35s; position: relative; overflow: hidden;
-  display: flex; flex-direction: column;
+/* Qwasar highlight in timeline */
+.tl-qwasar{
+  background:linear-gradient(135deg,rgba(200,145,58,.1) 0%,rgba(200,145,58,.04) 100%);
+  border:1px solid rgba(200,145,58,.18);border-radius:4px;padding:12px 14px;margin-bottom:15px;
 }
-.venture-card::after {
-  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
-  background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
-}
-.venture-card:hover::after { transform: scaleX(1); }
-.venture-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,0.45); border-color: rgba(196,149,58,0.2); }
-.venture-card.flagship {
-  grid-column: 1 / -1; border-color: rgba(196,149,58,0.22);
-  background: linear-gradient(135deg, var(--ink-card) 0%, rgba(196,149,58,0.04) 100%);
-}
-.venture-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; gap: 16px; }
-.venture-logo-wrap {
-  width: 56px; height: 56px; border-radius: 4px; background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border); display: flex; align-items: center;
-  justify-content: center; overflow: hidden; flex-shrink: 0;
-}
-.venture-logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
-.venture-logo-text {
-  width: 56px; height: 56px; border-radius: 4px; background: var(--gold-pale);
-  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--gold);
-}
-.venture-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-.badge {
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 2px;
-}
-.badge-live { background: rgba(14,166,114,0.1); color: #0EA672; border: 1px solid rgba(14,166,114,0.25); }
-.badge-dev  { background: rgba(245,158,11,0.1); color: #F59E0B; border: 1px solid rgba(245,158,11,0.25); }
-.badge-flag { background: rgba(196,149,58,0.1); color: var(--gold); border: 1px solid rgba(196,149,58,0.3); }
-.badge-type { background: transparent; color: var(--muted); border: 1px solid var(--line); }
-.venture-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--white); margin-bottom: 4px; line-height: 1.2; }
-.venture-system { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-.venture-desc { font-size: 14px; color: rgba(248,246,242,0.62); margin-bottom: 20px; line-height: 1.82; flex: 1; }
-.venture-impact {
-  display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px;
-  padding: 14px 16px; background: rgba(196,149,58,0.05); border-radius: 3px; border: 1px solid rgba(196,149,58,0.1);
-}
-.vi-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); white-space: nowrap; padding-top: 1px; }
-.vi-text { font-size: 13px; color: rgba(248,246,242,0.68); line-height: 1.6; }
-.venture-why { margin-bottom: 20px; }
-.vy-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
-.venture-why p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: rgba(248,246,242,0.58); line-height: 1.72; }
-.stack-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
-.tag {
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.5px;
-  background: var(--gold-pale); color: var(--gold); border: 1px solid rgba(196,149,58,0.18);
-  padding: 4px 10px; border-radius: 2px; text-transform: uppercase;
-}
-.venture-link {
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
-  text-transform: uppercase; color: var(--gold); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.3s; margin-top: auto;
-}
-.venture-link:hover { opacity: 0.68; }
+.tl-qwasar .tl-yr{color:var(--gold);}
+.tl-qwasar .tl-text{color:var(--chalk-70,rgba(240,237,232,.78));}
+.tl-qwasar .tl-text strong{color:var(--chalk);font-weight:600;}
 
-/* ─── RECOGNITION ─────────────────────────────────────────── */
-.recognition { background: var(--ink-mid); }
-.rec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.rec-card {
-  background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px;
-  padding: 32px; transition: all 0.3s; position: relative; overflow: hidden;
+/* ─────────────────────────────────────────────
+   VENTURES
+───────────────────────────────────────────── */
+.ventures{background:var(--bg);}
+.vgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.vc{
+  background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+  padding:32px;transition:all .32s;position:relative;overflow:hidden;display:flex;flex-direction:column;
 }
-.rec-card::before { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 100%; background: var(--gold); }
-.rec-card:hover { border-color: var(--border); transform: translateY(-3px); }
-.rec-year { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 12px; }
-.rec-title { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 600; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
-.rec-org { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 14px; text-transform: uppercase; }
-.rec-desc { font-size: 13px; color: rgba(248,246,242,0.58); line-height: 1.72; }
+.vc::before{
+  content:'';position:absolute;top:0;left:0;width:100%;height:2px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .32s ease;
+}
+.vc:hover::before{transform:scaleX(1);}
+.vc:hover{transform:translateY(-4px);box-shadow:0 20px 56px rgba(0,0,0,.45);border-color:rgba(200,145,58,.18);}
+.vc.flagship{
+  grid-column:1/-1;
+  background:linear-gradient(135deg,var(--surface) 0%,rgba(200,145,58,.04) 100%);
+  border-color:rgba(200,145,58,.2);
+}
+.vtop{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;gap:12px;}
+.vlogo{
+  width:52px;height:52px;border-radius:4px;background:rgba(255,255,255,.04);
+  border:1px solid var(--gold-line);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;
+}
+.vlogo img{width:100%;height:100%;object-fit:contain;padding:6px;}
+.vlt{
+  width:52px;height:52px;border-radius:4px;background:var(--gold-dim);
+  border:1px solid var(--gold-line);display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold);flex-shrink:0;
+}
+.vbadges{display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
+.vb{
+  font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;
+  letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border-radius:2px;
+}
+.vb-live{background:rgba(14,166,114,.1);color:#0EA672;border:1px solid rgba(14,166,114,.25);}
+.vb-dev{background:rgba(245,158,11,.1);color:#F59E0B;border:1px solid rgba(245,158,11,.25);}
+.vb-flag{background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-line);}
+.vb-type{background:transparent;color:var(--ch38);border:1px solid var(--rule);}
+.vtitle{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--chalk);margin-bottom:4px;line-height:1.2;}
+.vsys{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.vdesc{font-size:13.5px;color:var(--ch60);margin-bottom:18px;line-height:1.8;flex:1;}
+.vimp{
+  display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;
+  padding:12px 14px;background:rgba(200,145,58,.05);border-radius:3px;border:1px solid rgba(200,145,58,.1);
+}
+.vil{font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:1px;}
+.vit{font-size:12.5px;color:var(--ch60);line-height:1.6;}
+.vwhy{margin-bottom:18px;}
+.vwl{font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--ch38);display:block;margin-bottom:5px;}
+.vwhy p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--ch38);line-height:1.7;}
+.vtags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:20px;}
+.vtag{
+  font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;
+  background:var(--gold-dim);color:var(--gold);border:1px solid rgba(200,145,58,.15);
+  padding:3px 9px;border-radius:2px;
+}
+.vlink{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:6px;transition:opacity .25s;margin-top:auto;
+}
+.vlink:hover{opacity:.65;}
 
-/* ─── CV ──────────────────────────────────────────────────── */
-.cv-section { background: var(--ink); }
-.cv-card {
-  max-width: 1180px; margin: 0 auto;
-  background: var(--ink-card); border: 1px solid rgba(196,149,58,0.2);
-  border-radius: 4px; padding: 64px;
-  display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start;
+/* ─────────────────────────────────────────────
+   RECOGNITION
+───────────────────────────────────────────── */
+.recognition{background:var(--raised);}
+.rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.rcard{
+  background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+  padding:28px;transition:all .28s;position:relative;overflow:hidden;
 }
-.cv-title { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--white); margin-bottom: 12px; line-height: 1.2; }
-.cv-title strong { font-weight: 600; }
-.cv-intro { font-size: 15px; color: var(--muted); margin-bottom: 40px; line-height: 1.85; max-width: 520px; }
-.cv-list { list-style: none; margin-bottom: 40px; }
-.cv-list li { display: flex; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
-.cv-list li:first-child { border-top: 1px solid var(--line); }
-.cv-yr { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: var(--gold); min-width: 40px; padding-top: 2px; letter-spacing: 0.5px; }
-.cv-txt { font-size: 14px; color: rgba(248,246,242,0.72); line-height: 1.65; }
-.cv-txt strong { color: var(--white); font-weight: 600; }
-.cv-actions { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 100px; }
-.btn-cv {
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  background: var(--gold); color: var(--ink); padding: 18px 28px;
-  border-radius: 3px; text-decoration: none; transition: all 0.3s;
-}
-.btn-cv:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(196,149,58,0.25); }
-.btn-cv-out {
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  background: transparent; color: var(--white); padding: 16px 28px;
-  border-radius: 3px; border: 1px solid rgba(248,246,242,0.2); text-decoration: none; transition: all 0.3s;
-}
-.btn-cv-out:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
-.cv-note { font-size: 11px; color: var(--muted); text-align: center; padding: 0 8px; line-height: 1.65; }
+.rcard::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:var(--gold);}
+.rcard:hover{border-color:var(--gold-line);transform:translateY(-2px);}
+.ryr{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1.5px;color:var(--gold);margin-bottom:10px;}
+.rtitle{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--chalk);margin-bottom:6px;line-height:1.25;}
+.rorg{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.5px;color:var(--ch38);margin-bottom:12px;text-transform:uppercase;}
+.rdesc{font-size:12.5px;color:var(--ch60);line-height:1.72;}
 
-/* ─── CONTACT ─────────────────────────────────────────────── */
-.contact { background: var(--ink-mid); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
-.open-to { list-style: none; margin: 20px 0 36px; }
-.open-to li {
-  display: flex; align-items: flex-start; gap: 12px;
-  font-size: 14px; color: rgba(248,246,242,0.72); margin-bottom: 14px; line-height: 1.65;
+/* ─────────────────────────────────────────────
+   PROGRAM TRACK — Qwasar featured block
+───────────────────────────────────────────── */
+.program-track{
+  background:linear-gradient(135deg,#0f1c3f 0%,#1a2d5a 100%);
+  border:1px solid rgba(200,145,58,.22);border-radius:5px;padding:32px 36px;
+  position:relative;overflow:hidden;margin-bottom:20px;
 }
-.open-to li::before {
-  content: '\2192';
-  color: var(--gold); font-size: 13px; flex-shrink: 0; padding-top: 1px;
+.program-track::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-lt),var(--gold));
 }
-.social-items { display: flex; flex-direction: column; gap: 10px; }
-.social-item {
-  display: flex; align-items: center; gap: 14px;
-  background: var(--ink-card); border: 1px solid var(--line);
-  border-radius: 4px; padding: 14px 20px; text-decoration: none; transition: all 0.3s;
+.pt-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px;}
+.pt-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--chalk);line-height:1.25;}
+.pt-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+  background:rgba(14,166,114,.12);color:#0EA672;border:1px solid rgba(14,166,114,.28);
+  padding:4px 10px;border-radius:2px;white-space:nowrap;
 }
-.social-item:hover { border-color: var(--border); transform: translateX(4px); }
-.s-info { flex: 1; }
-.s-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; color: var(--white); }
-.s-handle { font-size: 11px; color: var(--muted); }
-.s-arrow { color: var(--gold); font-size: 14px; }
-.contact-form { background: var(--ink-card); border: 1px solid var(--line); border-radius: 4px; padding: 40px; }
-.form-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--white); margin-bottom: 28px; }
-.form-group { margin-bottom: 18px; }
-.form-label { display: block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-.form-input, .form-textarea, .form-select {
-  width: 100%; background: var(--ink); border: 1px solid var(--line);
-  border-radius: 3px; padding: 13px 16px; color: var(--white);
-  font-family: 'Inter', sans-serif; font-size: 13px;
-  transition: border-color 0.3s; outline: none; appearance: none;
+.pt-badge::before{content:'';width:6px;height:6px;background:#0EA672;border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.pt-track{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);margin-bottom:14px;
 }
-.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--gold); }
-.form-textarea { height: 140px; resize: vertical; }
-.form-select option { background: var(--ink-card); }
-.form-submit {
-  width: 100%; background: var(--gold); color: var(--ink); border: none;
-  border-radius: 3px; padding: 16px; cursor: pointer;
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.3s;
+.pt-date{
+  display:inline-block;font-family:'DM Mono',monospace;font-size:9px;font-weight:500;
+  background:rgba(200,145,58,.18);color:var(--gold-lt);padding:3px 10px;border-radius:2px;
+  margin-bottom:14px;letter-spacing:.5px;
 }
-.form-submit:hover { background: var(--gold-lt); transform: translateY(-1px); }
-.form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-.form-note { text-align: center; font-size: 11px; color: var(--muted); margin-top: 12px; }
+.pt-bul{list-style:none;padding-left:14px;}
+.pt-bul li{
+  font-size:13.5px;color:rgba(240,237,232,.78);line-height:1.65;margin-bottom:6px;
+  position:relative;
+}
+.pt-bul li::before{content:'—';position:absolute;left:-14px;color:var(--gold);font-weight:700;}
+.pt-bul li strong{color:var(--chalk);font-weight:600;}
 
-/* ─── FOOTER ──────────────────────────────────────────────── */
-footer {
-  background: var(--ink); padding: 56px 64px;
-  border-top: 1px solid var(--line); text-align: center;
+/* ─────────────────────────────────────────────
+   CV SECTION
+───────────────────────────────────────────── */
+.cv-sec{background:var(--bg);}
+.cv-card{
+  max-width:1160px;margin:0 auto;
+  background:var(--surface);border:1px solid rgba(200,145,58,.18);
+  border-radius:4px;padding:60px;
+  display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start;
 }
-.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--white); margin-bottom: 6px; }
-.footer-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; }
-.footer-nav { display: flex; justify-content: center; gap: 28px; list-style: none; margin-bottom: 28px; }
-.footer-nav a { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; }
-.footer-nav a:hover { color: var(--gold); }
-.footer-social { display: flex; justify-content: center; gap: 12px; margin-bottom: 28px; }
-.footer-social a { width: 38px; height: 38px; border-radius: 3px; background: var(--ink-card); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; }
-.footer-social a:hover { border-color: var(--border); transform: translateY(-2px); }
-.footer-copy { font-size: 11px; color: rgba(248,246,242,0.28); font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; }
+.cv-h{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--chalk);margin-bottom:12px;line-height:1.18;}
+.cv-h strong{font-weight:600;}
+.cv-intro{font-size:14.5px;color:var(--ch60);margin-bottom:36px;line-height:1.85;max-width:500px;}
+.cv-list{list-style:none;margin-bottom:36px;}
+.cv-list li{display:flex;gap:18px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:flex-start;}
+.cv-list li:first-child{border-top:1px solid var(--rule);}
+.cv-list li.highlight-entry{background:rgba(200,145,58,.05);margin:0 -8px;padding:13px 8px;border-radius:3px;}
+.cv-yr{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--gold);min-width:44px;padding-top:2px;letter-spacing:.5px;}
+.cv-txt{font-size:13.5px;color:var(--ch60);line-height:1.65;}
+.cv-txt strong{color:var(--chalk);font-weight:600;}
+.cv-txt .ongoing{
+  display:inline-block;font-family:'DM Mono',monospace;font-size:8px;font-weight:500;
+  letter-spacing:1px;text-transform:uppercase;background:rgba(14,166,114,.1);color:#0EA672;
+  border:1px solid rgba(14,166,114,.25);padding:2px 7px;border-radius:2px;margin-left:6px;vertical-align:middle;
+}
+.cv-side{display:flex;flex-direction:column;gap:12px;position:sticky;top:100px;}
+.btn-cv{
+  display:flex;align-items:center;justify-content:center;
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase;
+  background:var(--gold);color:#04060F;padding:16px 26px;border-radius:3px;transition:all .25s;
+}
+.btn-cv:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 28px rgba(200,145,58,.22);}
+.btn-cv-out{
+  display:flex;align-items:center;justify-content:center;
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase;
+  background:transparent;color:var(--chalk);padding:14px 26px;border-radius:3px;
+  border:1px solid rgba(240,237,232,.18);transition:all .25s;
+}
+.btn-cv-out:hover{border-color:var(--gold);color:var(--gold);}
+.cv-stat-box{
+  background:var(--raised);border:1px solid var(--rule);border-radius:3px;padding:18px 20px;
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.cv-stat{text-align:center;}
+.cv-stat-n{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--gold);line-height:1;margin-bottom:4px;}
+.cv-stat-l{font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ch38);line-height:1.5;}
 
-/* ─── RESPONSIVE ──────────────────────────────────────────── */
-@media (max-width: 960px) {
-  nav { padding: 14px 24px; }
-  .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
-  section { padding: 72px 24px; }
-  .hero { padding: 80px 24px 60px; }
-  .hero-content { grid-template-columns: 1fr; gap: 0; }
-  .hero h1 { font-size: 44px; }
-  .hero-visual { display: none; }
-  .impact-bar { padding: 40px 24px; }
-  .impact-grid { grid-template-columns: repeat(3, 1fr); }
-  .impact-item:nth-child(3) { border-right: none; }
-  .impact-item:nth-child(4) { border-top: 1px solid var(--line); }
-  .about-grid { grid-template-columns: 1fr; gap: 48px; }
-  .ventures-grid { grid-template-columns: 1fr; }
-  .venture-card.flagship { grid-column: 1; }
-  .rec-grid { grid-template-columns: 1fr; }
-  .cv-card { grid-template-columns: 1fr; gap: 40px; padding: 32px; }
-  .cv-actions { position: static; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-  .section-title { font-size: 34px; }
-  footer { padding: 48px 24px; }
-  .footer-nav { flex-wrap: wrap; gap: 14px; }
+/* ─────────────────────────────────────────────
+   CONTACT
+───────────────────────────────────────────── */
+.contact{background:var(--raised);}
+.cg{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;}
+.open-to{list-style:none;margin:18px 0 32px;}
+.open-to li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:14px;color:rgba(240,237,232,.7);margin-bottom:12px;line-height:1.65;
+}
+.open-to li::before{content:'→';color:var(--gold);font-size:12px;flex-shrink:0;padding-top:2px;}
+.socials{display:flex;flex-direction:column;gap:9px;}
+.soc{
+  display:flex;align-items:center;gap:13px;background:var(--surface);
+  border:1px solid var(--rule);border-radius:4px;padding:13px 18px;transition:all .25s;
+}
+.soc:hover{border-color:var(--gold-line);transform:translateX(4px);}
+.si{flex:1;}
+.sn{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--chalk);}
+.sh{font-size:11px;color:var(--ch60);}
+.cform{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:36px;}
+.fh{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--chalk);margin-bottom:24px;}
+.fg{margin-bottom:16px;}
+.fl{display:block;font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:7px;}
+.fi,.fta,.fsel{
+  width:100%;background:var(--bg);border:1px solid var(--rule);border-radius:3px;
+  padding:12px 14px;color:var(--chalk);font-family:'DM Sans',sans-serif;font-size:13px;
+  transition:border-color .25s;outline:none;appearance:none;
+}
+.fi:focus,.fta:focus,.fsel:focus{border-color:var(--gold);}
+.fta{height:130px;resize:vertical;}
+.fsel option{background:var(--surface);}
+.fsub{
+  width:100%;background:var(--gold);color:#04060F;border:none;border-radius:3px;
+  padding:14px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:11px;
+  font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s;
+}
+.fsub:hover{background:var(--gold-lt);transform:translateY(-1px);}
+.fsub:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.fnote{text-align:center;font-size:11px;color:var(--ch38);margin-top:10px;}
+
+/* ─────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────── */
+footer{
+  background:var(--bg);padding:52px 64px;
+  border-top:1px solid var(--rule);text-align:center;
+}
+.fn{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--chalk);margin-bottom:5px;}
+.ft{font-family:'DM Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.fnav{display:flex;justify-content:center;gap:26px;list-style:none;margin-bottom:24px;}
+.fnav a{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ch38);transition:color .25s;}
+.fnav a:hover{color:var(--gold);}
+.fsoc{display:flex;justify-content:center;gap:10px;margin-bottom:24px;}
+.fsoc a{
+  width:36px;height:36px;border-radius:3px;background:var(--surface);
+  border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;transition:all .25s;
+}
+.fsoc a:hover{border-color:var(--gold-line);transform:translateY(-2px);}
+.fc{font-size:10.5px;color:rgba(240,237,232,.2);font-family:'DM Mono',monospace;letter-spacing:.5px;}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────── */
+@media(max-width:960px){
+  nav{padding:14px 24px;}
+  .nav-links,.nav-cta{display:none;}
+  .burger{display:flex;}
+  section{padding:72px 24px;}
+  .hero{padding:80px 24px 60px;}
+  .hero-in{grid-template-columns:1fr;gap:0;}
+  .hero h1{font-size:46px;}
+  .hero-visual{display:none;}
+  .metrics{padding:36px 24px;}
+  .m-grid{grid-template-columns:repeat(3,1fr);}
+  .metric:nth-child(3){border-right:none;}
+  .metric:nth-child(4){border-top:1px solid var(--rule);}
+  .about-g{grid-template-columns:1fr;gap:48px;}
+  .vgrid{grid-template-columns:1fr;}
+  .vc.flagship{grid-column:1;}
+  .rec-grid{grid-template-columns:1fr;}
+  .cv-card{grid-template-columns:1fr;gap:40px;padding:32px;}
+  .cv-side{position:static;}
+  .cg{grid-template-columns:1fr;gap:40px;}
+  .h2{font-size:34px;}
+  footer{padding:44px 24px;}
+  .fnav{flex-wrap:wrap;gap:14px;}
+  .program-track{padding:24px;}
 }
 </style>
 </head>
 <body>
 
-<!-- Mobile Nav -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">&#x2715;</button>
-  <a href="#home"        onclick="closeMobileMenu()">Home</a>
-  <a href="#about"       onclick="closeMobileMenu()">About</a>
-  <a href="#ventures"    onclick="closeMobileMenu()">Ventures</a>
-  <a href="#recognition" onclick="closeMobileMenu()">Impact</a>
-  <a href="#cv"          onclick="closeMobileMenu()">CV</a>
-  <a href="#contact"     onclick="closeMobileMenu()">Contact</a>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()" aria-label="Close">&#x2715;</button>
+  <a href="#home" onclick="closeMob()">Home</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#ventures" onclick="closeMob()">Ventures</a>
+  <a href="#recognition" onclick="closeMob()">Impact</a>
+  <a href="#cv" onclick="closeMob()">CV</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
 </div>
 
 <nav id="navbar">
   <a href="#home" class="nav-logo">
-    <div class="nav-logo-mark" aria-hidden="true">LC</div>
+    <div class="nav-lc" aria-hidden="true">LC</div>
     Leila Cheikhe
   </a>
   <ul class="nav-links">
@@ -474,40 +550,48 @@ footer {
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Work With Me</a>
-  <button class="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
+  <button class="burger" onclick="openMob()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<div class="banner" role="banner">
+<div class="strip">
   America 250 Fellow &mdash; U.S. Department of State &nbsp;&bull;&nbsp; IBM watsonx Specialist &nbsp;&bull;&nbsp; 2&times; Moroccan National Award Winner
 </div>
 
-<!-- HERO -->
+<!-- ── HERO ─────────────────────────────────────────────── -->
 <section id="home" class="hero">
-  <div class="hero-content">
-    <div class="hero-text fade-up">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="fade">
       <div class="hero-tag">AI Strategy Architect &amp; Systems Builder</div>
-      <h1>Designing<br><em>Intelligent</em><br><strong>Systems</strong><br>for Africa's<br>1.5 Billion</h1>
-      <p class="hero-meta">
+      <h1>
+        Designing<br>
+        <em>Intelligent</em><br>
+        <strong>Systems</strong><br>
+        for Africa's<br>
+        1.5 Billion
+      </h1>
+      <p class="hero-creds">
         IBM watsonx Engineer
-        <span class="sep">|</span>
+        <span class="sep">&bull;</span>
         U.S. State Dept Fellow
-        <span class="sep">|</span>
+        <span class="sep">&bull;</span>
         Future CAIO
       </p>
       <p class="hero-sub">Building from Dakhla to global scale. Where others see infrastructure gaps, I architect intelligent systems.</p>
-      <div class="hero-buttons">
-        <a href="#contact"  class="btn-primary">Work With Me</a>
-        <a href="#cv"       class="btn-secondary">View CV</a>
+      <div class="hero-acts">
+        <a href="#contact" class="btn-gold">Work With Me</a>
+        <a href="cv.html"  class="btn-out" target="_blank" rel="noopener">Download CV</a>
         <a href="#ventures" class="btn-ghost">Explore Ventures</a>
       </div>
     </div>
-    <div class="hero-visual fade-up">
-      <div class="photo-frame">
-        <img src="profile-pic__3_.png" alt="Leila Cheikhe &mdash; AI Strategy Architect" class="photo-img"
-             onerror="this.style.background='#0D1232';this.style.height='480px';this.removeAttribute('src');">
-        <div class="photo-border" aria-hidden="true"></div>
+    <div class="hero-visual fade">
+      <div class="photo-wrap">
+        <img src="assets/profile.png" alt="Leila Cheikhe — AI Strategy Architect" class="photo-img"
+             onerror="this.parentElement.style.display='none';">
+        <div class="photo-frame" aria-hidden="true"></div>
         <div class="photo-badge">
           <strong>Leila Cheikhe</strong>
           AI Strategy Architect
@@ -515,366 +599,326 @@ footer {
       </div>
     </div>
   </div>
+  <div class="hero-rule" aria-hidden="true"></div>
 </section>
 
-<!-- IMPACT BAR -->
-<div class="impact-bar">
-  <div class="impact-grid">
-    <div class="impact-item fade-up"><div class="impact-number">6</div><div class="impact-label">Ventures<br>Built</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">1.5B</div><div class="impact-label">People<br>Targeted</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">35M+</div><div class="impact-label">Underserved<br>Users</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">85+</div><div class="impact-label">AI &amp; Engineering<br>Certifications</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">2&times;</div><div class="impact-label">National<br>Awards</div></div>
-    <div class="impact-item fade-up"><div class="impact-number">US</div><div class="impact-label">State Dept<br>Fellow</div></div>
+<!-- ── METRICS ─────────────────────────────────────────── -->
+<div class="metrics">
+  <div class="m-grid">
+    <div class="metric fade"><div class="mn" data-target="6">6</div><div class="ml">Ventures<br>Built</div></div>
+    <div class="metric fade"><div class="mn">1.5B</div><div class="ml">People<br>Targeted</div></div>
+    <div class="metric fade"><div class="mn">35M+</div><div class="ml">Underserved<br>Users</div></div>
+    <div class="metric fade"><div class="mn" data-target="85">85+</div><div class="ml">AI &amp; Eng<br>Certifications</div></div>
+    <div class="metric fade"><div class="mn">2&times;</div><div class="ml">National<br>Awards</div></div>
+    <div class="metric fade"><div class="mn">US</div><div class="ml">State Dept<br>Fellow</div></div>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ── ABOUT ──────────────────────────────────────────── -->
 <section id="about" class="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text fade-up">
-        <span class="label">About</span>
-        <h2 class="section-title">A Systems Builder<br><strong>From the Atlantic Edge</strong></h2>
-        <p>I was born in Dakhla &mdash; where the Sahara meets the Atlantic, where the maps run thin and the bandwidth runs thinner. In 2026, the U.S. Department of State selected me as an America 250 Fellow. Before that, I led ORBIT on IBM watsonx at an international hackathon. Before that, I founded a cooperative and applied AI to transform it.</p>
+  <div class="wrap">
+    <div class="about-g">
+      <div class="about-text fade">
+        <span class="eye">About</span>
+        <h2 class="h2">A Systems Builder<br><strong>From the Atlantic Edge</strong></h2>
+        <p>I was born in Dakhla &mdash; where the Sahara meets the Atlantic, far from any accelerator or tech campus. In 2026, the U.S. Department of State selected me as an America 250 Fellow. Before that, I led ORBIT on IBM watsonx at an international hackathon. Before that, I founded a cooperative and applied AI to transform it.</p>
         <p>What Dakhla taught me was clarity. When you build without a tech ecosystem around you, you learn to see the architecture underneath everything. Gaps are not absences &mdash; they are coordinates. I treat them that way.</p>
-        <div class="pullquote">
+        <div class="pull">
           <p>Africa's 1.5 billion people are not underserved because of a lack of intelligence. They are underserved because the systems were not designed for them. I design the systems.</p>
         </div>
-        <p>IBM watsonx Engineer, U.S. State Department Fellow, and founder of multiple AI ventures at the intersection of language, economy, and intelligent infrastructure. My work spans agentic AI systems, cooperative digital transformation, and sovereign AI for emerging markets.</p>
-        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="about-link">Connect on LinkedIn &#x2192;</a>
+        <p>IBM watsonx Engineer, U.S. State Department Fellow, and founder of AI ventures at the intersection of language, economy, and intelligent infrastructure. My work spans agentic AI systems, cooperative digital transformation, and sovereign AI for emerging markets.</p>
+        <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="a-link">Connect on LinkedIn &#x2192;</a>
       </div>
-      <div class="fade-up">
-        <div class="competencies">
-
-          <!-- AI Systems Architecture -->
-          <div class="competency-item">
-            <div class="comp-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/><path d="M9 10h-3M15 10h3M12 7V5M12 15v-2"/></svg>
+      <div class="fade">
+        <div class="comps">
+          <div class="comp">
+            <div class="comp-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10H6M15 10h3M12 7V5M12 15v-2"/></svg>
             </div>
-            <div class="comp-text">
-              <div class="comp-name">AI Systems Architecture</div>
-              <div class="comp-desc">LLM Agents &middot; IBM watsonx &middot; Multi-Agent Systems &middot; Agentic Workflows &middot; Python</div>
-            </div>
+            <div><div class="cn">AI Systems Architecture</div><div class="cd">LLM Agents &middot; IBM watsonx &middot; Multi-Agent Systems &middot; Agentic Workflows &middot; Python</div></div>
           </div>
-
-          <!-- Venture Building -->
-          <div class="competency-item">
-            <div class="comp-icon" aria-hidden="true">
+          <div class="comp">
+            <div class="comp-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <div class="comp-text">
-              <div class="comp-name">Venture Building &amp; Strategy</div>
-              <div class="comp-desc">Founder &middot; Cooperative Leader &middot; AI Transformation &middot; Economic Systems Design</div>
-            </div>
+            <div><div class="cn">Venture Building &amp; Strategy</div><div class="cd">Founder &middot; Cooperative Leader &middot; AI Transformation &middot; Economic Systems Design</div></div>
           </div>
-
-          <!-- Digital Transformation -->
-          <div class="competency-item">
-            <div class="comp-icon" aria-hidden="true">
+          <div class="comp">
+            <div class="comp-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
             </div>
-            <div class="comp-text">
-              <div class="comp-name">Digital Transformation</div>
-              <div class="comp-desc">Emerging Markets &middot; Institutional AI Adoption &middot; Cooperative Digitisation</div>
-            </div>
+            <div><div class="cn">Digital Transformation</div><div class="cd">Emerging Markets &middot; Institutional AI Adoption &middot; Cooperative Digitisation</div></div>
           </div>
-
-          <!-- Multilingual Intelligence -->
-          <div class="competency-item">
-            <div class="comp-icon" aria-hidden="true">
+          <div class="comp">
+            <div class="comp-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
             </div>
-            <div class="comp-text">
-              <div class="comp-name">Multilingual Intelligence</div>
-              <div class="comp-desc">Arabic &middot; French &middot; English &middot; Darija NLP &middot; Language Inclusion</div>
+            <div><div class="cn">Multilingual Intelligence</div><div class="cd">Arabic &middot; French &middot; English &middot; Darija NLP &middot; Language Inclusion</div></div>
+          </div>
+        </div>
+        <ul class="tl">
+          <li><span class="tl-yr">2020</span><div class="tl-dot"></div><div class="tl-text">Baccalaureate &mdash; Dakhla, Morocco</div></li>
+          <li><span class="tl-yr">2021</span><div class="tl-dot"></div><div class="tl-text">Arizona State University &mdash; Computer Science</div></li>
+          <li><span class="tl-yr">2022</span><div class="tl-dot"></div><div class="tl-text">ISTA &mdash; Business &amp; Finance, Dakhla</div></li>
+          <li><span class="tl-yr">2023</span><div class="tl-dot"></div><div class="tl-text">Founded Elite Yassmin Cooperative &mdash; Dakhla</div></li>
+          <li><span class="tl-yr">2024</span><div class="tl-dot"></div><div class="tl-text">Financial Analyst &middot; Ministry of Interior &middot; 2&times; National Awards</div></li>
+        </ul>
+        <!-- Qwasar highlighted entry -->
+        <div class="tl-qwasar fade">
+          <div style="display:flex;gap:16px;align-items:flex-start;">
+            <span class="tl-yr">2025&ndash;</span>
+            <div class="tl-dot" style="margin-top:8px;flex-shrink:0;"></div>
+            <div class="tl-text">
+              <strong>Qwasar Silicon Valley / JobInTech / Web4Jobs</strong><br>
+              AI Engineering &amp; Fullstack Software Development &mdash; 60+ real-world projects &middot; 85+ certifications &middot; <span style="color:#0EA672;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;font-weight:500;">ONGOING</span>
             </div>
           </div>
-
         </div>
-        <ul class="timeline">
-          <li><span class="t-year">2020</span><div class="t-dot"></div><div class="t-text">Baccalaureate &mdash; Dakhla, Morocco</div></li>
-          <li><span class="t-year">2021</span><div class="t-dot"></div><div class="t-text">Arizona State University &mdash; Computer Science</div></li>
-          <li><span class="t-year">2022</span><div class="t-dot"></div><div class="t-text">ISTA &mdash; Business &amp; Finance</div></li>
-          <li><span class="t-year">2023</span><div class="t-dot"></div><div class="t-text">Founded Elite Yassmin Cooperative &mdash; Dakhla</div></li>
-          <li><span class="t-year">2024</span><div class="t-dot"></div><div class="t-text">Financial Analyst Internship &middot; Ministry of Interior &middot; 2&times; National Awards</div></li>
-          <li><span class="t-year">2025</span><div class="t-dot"></div><div class="t-text">Qwasar Silicon Valley &mdash; 60+ projects &middot; 85+ certifications</div></li>
-          <li><span class="t-year">2026</span><div class="t-dot"></div><div class="t-text">ORBIT &middot; IBM watsonx &middot; America 250 Fellowship &mdash; U.S. Dept of State</div></li>
+        <ul class="tl" style="margin-top:0;">
+          <li><span class="tl-yr">2026</span><div class="tl-dot"></div><div class="tl-text">ORBIT &middot; IBM watsonx &middot; America 250 Fellowship &mdash; U.S. Dept of State</div></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- VENTURES -->
+<!-- ── VENTURES ───────────────────────────────────────── -->
 <section id="ventures" class="ventures">
-  <div class="container">
-    <span class="label">Ventures</span>
-    <h2 class="section-title">Intelligent Systems<br><strong>Built for Real Scale</strong></h2>
-    <p class="section-sub">Not demos. Not prototypes. Platforms and protocols architected at the intersection of AI, economy, and language &mdash; designed to operate at continental and global scale.</p>
+  <div class="wrap">
+    <span class="eye">Ventures</span>
+    <h2 class="h2">Intelligent Systems<br><strong>Built for Real Scale</strong></h2>
+    <p class="sub">Not demos. Not prototypes. Platforms architected at the intersection of AI, economy, and language &mdash; designed for continental and global scale.</p>
 
-    <div class="ventures-grid">
+    <div class="vgrid">
 
-      <!-- ORBIT -->
-      <div class="venture-card fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-wrap">
-            <img src="ORBIT_1.png" alt="ORBIT" onerror="this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond,serif;font-size:22px;font-weight:600;color:#C4953A;\'>O</span>';">
-          </div>
-          <div class="venture-badges">
-            <span class="badge badge-live">Active</span>
-            <span class="badge badge-type">AI Infrastructure</span>
-          </div>
+      <div class="vc fade">
+        <div class="vtop">
+          <div class="vlogo"><img src="assets/orbit.png" alt="ORBIT" onerror="this.parentElement.outerHTML='<div class=\'vlt\'>O</div>'"></div>
+          <div class="vbadges"><span class="vb vb-live">Active</span><span class="vb vb-type">AI Infrastructure</span></div>
         </div>
-        <h3 class="venture-title">ORBIT</h3>
-        <div class="venture-system">Agentic AI Workflow Orchestration System</div>
-        <p class="venture-desc">A multi-agent AI system built on IBM watsonx Orchestrate that enables intelligent, autonomous workflow management. ORBIT deploys LLM-based agents with tool use, reasoning chains, and multi-step task automation &mdash; built to serve enterprise and institutional contexts in emerging markets.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Impact</span>
-          <span class="vi-text">Led international team of 3 engineers &middot; IBM Dev Day AI Hackathon &middot; Enterprise-grade agentic pipeline</span>
-        </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>Most enterprise AI deployments in Africa are outsourced, fragile, and culturally misaligned. ORBIT is infrastructure built from inside the continent &mdash; by someone who understands what the systems actually need to do.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">IBM watsonx</span><span class="tag">LLM Agents</span><span class="tag">Multi-Agent</span><span class="tag">Agentic AI</span><span class="tag">Python</span>
-        </div>
-        <a href="https://lnkd.in/de4MzCwh" target="_blank" rel="noopener" class="venture-link">Explore ORBIT &#x2192;</a>
+        <h3 class="vtitle">ORBIT</h3>
+        <div class="vsys">Agentic AI Workflow Orchestration System</div>
+        <p class="vdesc">A multi-agent AI system on IBM watsonx Orchestrate enabling intelligent autonomous workflow management. LLM-based agents with tool use, reasoning chains, and multi-step task automation &mdash; built for enterprise and institutional contexts in emerging markets.</p>
+        <div class="vimp"><span class="vil">Impact</span><span class="vit">International team of 3 &middot; IBM Dev Day AI Hackathon &middot; Enterprise-grade agentic pipeline</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>Most enterprise AI in Africa is outsourced and fragile. ORBIT is infrastructure built from inside the continent, by someone who understands what the systems need to do.</p></div>
+        <div class="vtags"><span class="vtag">IBM watsonx</span><span class="vtag">LLM Agents</span><span class="vtag">Multi-Agent</span><span class="vtag">Agentic AI</span><span class="vtag">Python</span></div>
+        <a href="https://lnkd.in/de4MzCwh" target="_blank" rel="noopener" class="vlink">Explore ORBIT &#x2192;</a>
       </div>
 
-      <!-- Artisia -->
-      <div class="venture-card fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-wrap">
-            <img src="artisia-logo.jpeg" alt="Artisia" onerror="this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond,serif;font-size:22px;font-weight:600;color:#C4953A;\'>A</span>';">
-          </div>
-          <div class="venture-badges">
-            <span class="badge badge-dev">In Development</span>
-            <span class="badge badge-type">AI Platform</span>
-          </div>
+      <div class="vc fade">
+        <div class="vtop">
+          <div class="vlogo"><img src="assets/artisia.png" alt="Artisia" onerror="this.parentElement.outerHTML='<div class=\'vlt\'>A</div>'"></div>
+          <div class="vbadges"><span class="vb vb-dev">In Development</span><span class="vb vb-type">AI Platform</span></div>
         </div>
-        <h3 class="venture-title">Artisia</h3>
-        <div class="venture-system">AI-Powered Artisan Economy Platform</div>
-        <p class="venture-desc">Artisia transforms Morocco's traditional craft sector into a globally connected, AI-native marketplace. Voice-to-listing AI, intelligent pricing, and multilingual product generation give artisans access to international buyers without language or technology barriers.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Impact</span>
-          <span class="vi-text">Serves Morocco's 2.4M artisans &middot; Extends award-winning Link Artisanal Dakhla &middot; Arabic &middot; French &middot; English</span>
-        </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>Morocco's artisan economy is one of the largest in Africa &mdash; and nearly invisible to global markets. Artisia is the infrastructure layer that changes that permanently.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">OpenAI API</span><span class="tag">NLP</span><span class="tag">Voice AI</span><span class="tag">Python</span><span class="tag">E-Commerce</span>
-        </div>
-        <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
+        <h3 class="vtitle">Artisia</h3>
+        <div class="vsys">AI-Powered Artisan Economy Platform</div>
+        <p class="vdesc">Transforms Morocco's traditional craft sector into a globally connected AI-native marketplace. Voice-to-listing AI, intelligent pricing, and multilingual product generation give 2.4M artisans access to international buyers without language or technology barriers.</p>
+        <div class="vimp"><span class="vil">Impact</span><span class="vit">2.4M artisans &middot; Extends award-winning Link Artisanal Dakhla &middot; Arabic &middot; French &middot; English</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>Morocco's artisan economy is one of Africa's largest &mdash; and nearly invisible to global markets. Artisia is the infrastructure layer that changes that permanently.</p></div>
+        <div class="vtags"><span class="vtag">OpenAI API</span><span class="vtag">NLP</span><span class="vtag">Voice AI</span><span class="vtag">Python</span><span class="vtag">Next.js</span></div>
+        <a href="#contact" class="vlink">Follow the Build &#x2192;</a>
       </div>
 
-      <!-- Elite Yassmin -->
-      <div class="venture-card fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-text">EY</div>
-          <div class="venture-badges">
-            <span class="badge badge-live">Ongoing</span>
-            <span class="badge badge-type">Cooperative AI</span>
-          </div>
+      <div class="vc fade">
+        <div class="vtop">
+          <div class="vlogo"><img src="assets/elite-yassmin.png" alt="Elite Yassmin" onerror="this.parentElement.outerHTML='<div class=\'vlt\'>EY</div>'"></div>
+          <div class="vbadges"><span class="vb vb-live">Ongoing</span><span class="vb vb-type">Cooperative AI</span></div>
         </div>
-        <h3 class="venture-title">Elite Yassmin</h3>
-        <div class="venture-system">AI-Enabled Cooperative Execution &amp; Market Deployment</div>
-        <p class="venture-desc">Morocco's first AI-transformed natural cosmetics cooperative. Elite Yassmin integrates AI pricing intelligence, customer segmentation, multilingual product catalogs, and digital market access &mdash; turning a traditional women-led cooperative into a data-driven, export-ready enterprise.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Impact</span>
-          <span class="vi-text">Founded and led since 2023 &middot; Dakhla, Morocco &middot; Women-led cooperative &middot; Natural cosmetics &middot; Export markets</span>
-        </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>Elite Yassmin proves that AI-driven transformation is replicable at cooperative scale &mdash; and that is the template Africa's 20,000+ cooperatives need.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">Machine Learning</span><span class="tag">Computer Vision</span><span class="tag">Python</span><span class="tag">CRM AI</span>
-        </div>
-        <a href="#contact" class="venture-link">Case Study &#x2192;</a>
+        <h3 class="vtitle">Elite Yassmin</h3>
+        <div class="vsys">AI-Enabled Cooperative Execution &amp; Market Deployment</div>
+        <p class="vdesc">Morocco's first AI-transformed natural cosmetics cooperative. AI pricing intelligence, customer segmentation, multilingual catalogs, and digital market access &mdash; turning a women-led cooperative into a data-driven, export-ready enterprise.</p>
+        <div class="vimp"><span class="vil">Impact</span><span class="vit">Founded 2023 &middot; Dakhla &middot; Women-led &middot; 2&times; National Award recognition</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>Elite Yassmin proves AI-driven transformation is replicable at cooperative scale &mdash; the template Africa's 20,000+ cooperatives need.</p></div>
+        <div class="vtags"><span class="vtag">Machine Learning</span><span class="vtag">Computer Vision</span><span class="vtag">Python</span><span class="vtag">CRM AI</span></div>
+        <a href="#contact" class="vlink">Case Study &#x2192;</a>
       </div>
 
-      <!-- DarijaBot -->
-      <div class="venture-card fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-text">D</div>
-          <div class="venture-badges">
-            <span class="badge badge-dev">In Development</span>
-            <span class="badge badge-type">Language Infrastructure</span>
-          </div>
+      <div class="vc fade">
+        <div class="vtop">
+          <div class="vlt">D</div>
+          <div class="vbadges"><span class="vb vb-dev">In Development</span><span class="vb vb-type">Language Infrastructure</span></div>
         </div>
-        <h3 class="venture-title">DarijaBot</h3>
-        <div class="venture-system">Language Inclusion Infrastructure for 35M+ Speakers</div>
-        <p class="venture-desc">The first AI assistant purpose-built for Darija &mdash; the spoken Arabic dialect of 35 million Moroccans. Mainstream AI treats Darija as noise. DarijaBot treats it as signal. Built to close the AI language gap that excludes an entire population from the intelligence revolution.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Impact</span>
-          <span class="vi-text">35M+ potential users &middot; Zero existing quality AI tools for Darija &middot; Language sovereignty infrastructure</span>
-        </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>Language is the first gate of exclusion in AI. DarijaBot removes that gate for an entire nation &mdash; and creates the blueprint for dozens of underrepresented languages globally.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">LangChain</span><span class="tag">HuggingFace</span><span class="tag">OpenAI API</span><span class="tag">Arabic NLP</span>
-        </div>
-        <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
+        <h3 class="vtitle">DarijaBot</h3>
+        <div class="vsys">Language Inclusion Infrastructure for 35M+ Speakers</div>
+        <p class="vdesc">The first AI assistant purpose-built for Darija &mdash; the spoken Arabic dialect of 35 million Moroccans. Mainstream AI treats Darija as noise. DarijaBot treats it as signal. Closing the AI language gap that excludes an entire population from the intelligence revolution.</p>
+        <div class="vimp"><span class="vil">Impact</span><span class="vit">35M+ potential users &middot; Zero quality AI tools for Darija &middot; Language sovereignty infrastructure</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>Language is the first gate of exclusion in AI. DarijaBot removes that gate &mdash; and creates the blueprint for underrepresented languages globally.</p></div>
+        <div class="vtags"><span class="vtag">LangChain</span><span class="vtag">HuggingFace</span><span class="vtag">OpenAI API</span><span class="vtag">Arabic NLP</span></div>
+        <a href="#contact" class="vlink">Follow the Build &#x2192;</a>
       </div>
 
-      <!-- CoopAI -->
-      <div class="venture-card fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-text">C</div>
-          <div class="venture-badges">
-            <span class="badge badge-dev">In Development</span>
-            <span class="badge badge-type">AI for Cooperatives</span>
-          </div>
+      <div class="vc fade">
+        <div class="vtop">
+          <div class="vlt">C</div>
+          <div class="vbadges"><span class="vb vb-dev">In Development</span><span class="vb vb-type">AI for Cooperatives</span></div>
         </div>
-        <h3 class="venture-title">CoopAI</h3>
-        <div class="venture-system">AI Systems for Cooperative Economies &amp; Women-Led Networks</div>
-        <p class="venture-desc">A WhatsApp-native AI assistant serving Morocco's 20,000+ cooperative managers with regulatory guidance, pricing intelligence, export documentation, and financial analytics &mdash; entirely in Arabic and French. CoopAI brings enterprise-grade AI to the grassroots economic layer.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Impact</span>
-          <span class="vi-text">20,000+ cooperatives &middot; 500,000+ workers &middot; WhatsApp-first &middot; Arabic &amp; French native</span>
-        </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>Morocco's cooperative sector manages billions in GDP with almost zero AI tools designed for it. CoopAI fills that gap at scale &mdash; in the language it actually operates in.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">LangChain</span><span class="tag">WhatsApp API</span><span class="tag">OpenAI API</span><span class="tag">Python</span>
-        </div>
-        <a href="#contact" class="venture-link">Follow the Build &#x2192;</a>
+        <h3 class="vtitle">CoopAI</h3>
+        <div class="vsys">AI Systems for Cooperative Economies &amp; Women-Led Networks</div>
+        <p class="vdesc">A WhatsApp-native AI assistant for Morocco's 20,000+ cooperative managers. Regulatory guidance, pricing intelligence, export documentation, and financial analytics &mdash; entirely in Arabic and French. Enterprise-grade AI at the grassroots economic layer.</p>
+        <div class="vimp"><span class="vil">Impact</span><span class="vit">20,000+ cooperatives &middot; 500,000+ workers &middot; WhatsApp-first &middot; Arabic &amp; French native</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>Morocco's cooperative sector manages billions in GDP with almost zero AI tools designed for it. CoopAI fills that gap at scale &mdash; in the language it actually operates in.</p></div>
+        <div class="vtags"><span class="vtag">LangChain</span><span class="vtag">WhatsApp API</span><span class="vtag">OpenAI API</span><span class="vtag">Node.js</span></div>
+        <a href="#contact" class="vlink">Follow the Build &#x2192;</a>
       </div>
 
-      <!-- TANIT FLAGSHIP -->
-      <div class="venture-card flagship fade-up">
-        <div class="venture-top">
-          <div class="venture-logo-text">T</div>
-          <div class="venture-badges">
-            <span class="badge badge-flag">Flagship Initiative</span>
-            <span class="badge badge-type">Cooperative Intelligence Protocol</span>
-          </div>
+      <div class="vc flagship fade">
+        <div class="vtop">
+          <div class="vlt">T</div>
+          <div class="vbadges"><span class="vb vb-flag">Flagship Initiative</span><span class="vb vb-type">Cooperative Intelligence Protocol</span></div>
         </div>
-        <h3 class="venture-title">TANIT</h3>
-        <div class="venture-system">Shared AI Infrastructure for the Global Cooperative Economy</div>
-        <p class="venture-desc">The cooperative economy &mdash; 3 million cooperatives, 1.2 billion workers, $3 trillion annually &mdash; operates without a single AI system designed for its collective governance structure, local languages, or informal-market context. TANIT builds that infrastructure from the inside: a multilingual, WhatsApp-native AI stack that gives cooperative managers pricing intelligence, regulatory navigation, and market access tools as shared public infrastructure. Owned by the networks it serves, not extracted from them. Built by a founder who ran a cooperative before she built the AI.</p>
-        <div class="venture-impact">
-          <span class="vi-label">Scale</span>
-          <span class="vi-text">3M cooperatives &middot; 1.2B workers &middot; 54 African nations &middot; 70% women-led &middot; $3T economy made AI-native for the first time</span>
+        <h3 class="vtitle">TANIT</h3>
+        <div class="vsys">Shared AI Infrastructure for the Global Cooperative Economy</div>
+        <p class="vdesc">The cooperative economy &mdash; 3 million cooperatives, 1.2 billion workers, $3 trillion annually &mdash; operates without a single AI system designed for its governance structure, local languages, or informal-market context. TANIT builds that infrastructure from the inside: a multilingual, WhatsApp-native AI stack giving cooperative managers pricing intelligence, regulatory navigation, and market access tools as shared public infrastructure. Owned by the networks it serves, not extracted from them. Built by a founder who ran a cooperative before she built the AI.</p>
+        <div class="vimp"><span class="vil">Scale</span><span class="vit">3M cooperatives &middot; 1.2B workers &middot; 54 African nations &middot; 70% women-led &middot; $3T economy made AI-native</span></div>
+        <div class="vwhy"><span class="vwl">Why it matters</span><p>The AI transition is being designed for corporations. Cooperatives represent more workers than any other organisational form on Earth &mdash; and they are invisible to every AI platform in existence. TANIT makes them visible, on their own terms.</p></div>
+        <div class="vtags">
+          <span class="vtag">Sovereign AI</span><span class="vtag">Cooperative Economy</span><span class="vtag">IBM watsonx</span>
+          <span class="vtag">Language Inclusion</span><span class="vtag">Multi-Agent</span>
+          <span class="vtag">Open Infrastructure</span><span class="vtag">WhatsApp-Native</span><span class="vtag">Development Finance</span>
         </div>
-        <div class="venture-why">
-          <span class="vy-label">Why it matters</span>
-          <p>The AI transition is being designed for corporations. Cooperatives represent more workers than any other organisational form on Earth &mdash; and they are invisible to every AI platform in existence. TANIT makes them visible, on their own terms.</p>
-        </div>
-        <div class="stack-tags">
-          <span class="tag">Sovereign AI</span><span class="tag">Cooperative Economy</span><span class="tag">IBM watsonx</span>
-          <span class="tag">Language Inclusion</span><span class="tag">Multi-Agent Workflows</span>
-          <span class="tag">Open Infrastructure</span><span class="tag">WhatsApp-Native</span><span class="tag">Development Finance</span>
-        </div>
-        <a href="#contact" class="venture-link">Inquire About TANIT &#x2192;</a>
+        <a href="#contact" class="vlink">Inquire About TANIT &#x2192;</a>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- RECOGNITION -->
+<!-- ── RECOGNITION ─────────────────────────────────────── -->
 <section id="recognition" class="recognition">
-  <div class="container">
-    <span class="label">Impact &amp; Recognition</span>
-    <h2 class="section-title">Selected<br><strong>Credentials &amp; Awards</strong></h2>
-    <p class="section-sub">Institutional recognition from government, global technology, and international development organisations.</p>
+  <div class="wrap">
+    <span class="eye">Impact &amp; Recognition</span>
+    <h2 class="h2">Selected<br><strong>Credentials &amp; Awards</strong></h2>
+    <p class="sub">Institutional recognition from government, global technology, and international development organisations.</p>
     <div class="rec-grid">
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2026</div>
-        <h3 class="rec-title">America 250 Fellow</h3>
-        <div class="rec-org">U.S. Department of State</div>
-        <p class="rec-desc">Selected as a U.S. State Department Fellow through the America 250 program &mdash; designating high-potential emerging leaders in global innovation and strategic technology. One of a small cohort selected across the MENA region.</p>
+      <div class="rcard fade">
+        <div class="ryr">2026</div>
+        <h3 class="rtitle">America 250 Fellow</h3>
+        <div class="rorg">U.S. Department of State</div>
+        <p class="rdesc">Selected as a U.S. State Department Fellow through the America 250 programme &mdash; designating high-potential emerging leaders in global innovation and strategic technology. One of a small cohort from the MENA region.</p>
       </div>
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2026</div>
-        <h3 class="rec-title">IBM watsonx Specialist</h3>
-        <div class="rec-org">IBM / Qwasar Silicon Valley</div>
-        <p class="rec-desc">Certified specialist in IBM watsonx enterprise AI. Led the ORBIT agentic AI project at the IBM Dev Day AI Demystified Hackathon &mdash; implementing multi-agent reasoning pipelines and enterprise workflow orchestration.</p>
+      <div class="rcard fade">
+        <div class="ryr">2026</div>
+        <h3 class="rtitle">IBM watsonx Specialist</h3>
+        <div class="rorg">IBM / Qwasar Silicon Valley / JobInTech</div>
+        <p class="rdesc">Certified specialist in IBM watsonx enterprise AI. Led ORBIT at the IBM Dev Day AI Demystified Hackathon &mdash; implementing multi-agent reasoning pipelines and enterprise workflow orchestration.</p>
       </div>
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2024</div>
-        <h3 class="rec-title">National Award &mdash; Link Artisanal</h3>
-        <div class="rec-org">Kingdom of Morocco &mdash; Ministry Level</div>
-        <p class="rec-desc">State-level national recognition for the Link Artisanal Dakhla initiative &mdash; an AI-powered artisan market access programme serving traditional craftspeople in Morocco's southern Atlantic region.</p>
+      <div class="rcard fade">
+        <div class="ryr">2024</div>
+        <h3 class="rtitle">National Award &mdash; Link Artisanal</h3>
+        <div class="rorg">Kingdom of Morocco &mdash; Ministry Level</div>
+        <p class="rdesc">State-level national recognition for Link Artisanal Dakhla &mdash; an AI-powered artisan market access programme serving craftspeople in Morocco's southern Atlantic region.</p>
       </div>
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2023</div>
-        <h3 class="rec-title">National Solidarity Generation Award</h3>
-        <div class="rec-org">Moroccan Ministry of Tourism</div>
-        <p class="rec-desc">Recognised at the national government level for innovation, entrepreneurship, and community impact &mdash; a rare distinction for an engineer operating from Morocco's southern region, far from any capital city.</p>
+      <div class="rcard fade">
+        <div class="ryr">2023</div>
+        <h3 class="rtitle">National Solidarity Generation Award</h3>
+        <div class="rorg">Moroccan Ministry of Tourism</div>
+        <p class="rdesc">National government recognition for innovation, entrepreneurship, and community impact &mdash; a rare distinction for a builder operating from Morocco's southern region, far from any capital city.</p>
       </div>
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2025</div>
-        <h3 class="rec-title">85+ Technical Certifications</h3>
-        <div class="rec-org">IBM &middot; Coursera &middot; Qwasar &middot; Google &middot; Microsoft</div>
-        <p class="rec-desc">Completed 85+ professional certifications in AI engineering, cloud infrastructure, cybersecurity, and data science &mdash; across Qwasar Silicon Valley's 60+ project curriculum and leading global platforms.</p>
+      <!-- Qwasar Track as a recognition card -->
+      <div class="rcard fade" style="border-color:rgba(200,145,58,.2);background:linear-gradient(135deg,var(--surface) 0%,rgba(200,145,58,.04) 100%);">
+        <div class="ryr">Sep 2025 &ndash; Present &nbsp;<span style="color:#0EA672;font-size:8px;">&#9679; ONGOING</span></div>
+        <h3 class="rtitle">Qwasar Silicon Valley</h3>
+        <div class="rorg">JobInTech / Web4Jobs &mdash; Fullstack AI Engineering Track</div>
+        <p class="rdesc">60+ real-world engineering projects and 85+ certifications across AI systems, fullstack development (React, Next.js, Node.js, NestJS), cloud infrastructure, and cybersecurity. Ongoing intensive programme.</p>
       </div>
 
-      <div class="rec-card fade-up">
-        <div class="rec-year">2026</div>
-        <h3 class="rec-title">IBM Dev Day Hackathon Lead</h3>
-        <div class="rec-org">IBM &amp; Qwasar Silicon Valley</div>
-        <p class="rec-desc">Led an international team of three engineers at the IBM Dev Day AI Demystified Hackathon to build ORBIT &mdash; a production-grade agentic AI orchestration system, delivered under competition conditions.</p>
+      <div class="rcard fade">
+        <div class="ryr">2024</div>
+        <h3 class="rtitle">Top 20 &mdash; Digital Skills Cup</h3>
+        <div class="rorg">IT Security Track &middot; Kingdom of Morocco</div>
+        <p class="rdesc">Ranked in the top 20 nationally in Morocco's Digital Skills Cup, IT Security and Cybersecurity category. One of the few engineers from Morocco's southern region to compete at national level.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CV -->
-<section id="cv" class="cv-section">
-  <div class="container">
-    <div class="cv-card fade-up">
+<!-- ── CV SECTION ──────────────────────────────────────── -->
+<section id="cv" class="cv-sec">
+  <div class="wrap">
+    <div class="cv-card fade">
       <div>
-        <span class="label">Executive Profile</span>
-        <h2 class="cv-title">Credentials &amp;<br><strong>Experience</strong></h2>
+        <span class="eye">Executive Profile</span>
+        <h2 class="cv-h">Credentials &amp;<br><strong>Experience</strong></h2>
         <p class="cv-intro">IBM watsonx Engineer &middot; AI Strategy Architect &middot; U.S. State Department Fellow &middot; Venture Builder &middot; Cooperative Leader. Available for global AI strategy roles, fellowships, research partnerships, and advisory engagements.</p>
         <ul class="cv-list">
-          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>America 250 Fellow</strong> &mdash; U.S. Department of State. Selected for high-potential leadership in global innovation and strategic technology.</span></li>
-          <li><span class="cv-yr">2026</span><span class="cv-txt"><strong>IBM watsonx Specialist &amp; ORBIT System Lead</strong> &mdash; Enterprise-grade agentic AI on IBM infrastructure. International team lead, IBM Dev Day Hackathon.</span></li>
-          <li><span class="cv-yr">2025</span><span class="cv-txt"><strong>Qwasar Silicon Valley</strong> &mdash; 60+ engineering projects across AI systems, fullstack, cybersecurity, and data science. 85+ certifications.</span></li>
-          <li><span class="cv-yr">2024</span><span class="cv-txt"><strong>Financial Analyst &amp; Ministry of Interior Internship</strong> &mdash; Institutional finance and public sector digital governance, Morocco.</span></li>
-          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Founder &mdash; Elite Yassmin Cooperative</strong> &mdash; AI-transformed women-led natural cosmetics cooperative, Dakhla. 2&times; National Award recognition.</span></li>
-          <li><span class="cv-yr">2023</span><span class="cv-txt"><strong>Link Artisanal Dakhla &mdash; National Award</strong> &mdash; Government-recognised AI artisan market access platform, Ministry of Morocco.</span></li>
-          <li><span class="cv-yr">2021</span><span class="cv-txt"><strong>Arizona State University</strong> &mdash; Computer Science coursework. ISTA Business &amp; Finance programme, Morocco.</span></li>
+          <li>
+            <span class="cv-yr">2026</span>
+            <span class="cv-txt"><strong>America 250 Fellow</strong> &mdash; U.S. Department of State. Selected for high-potential leadership in global innovation and strategic technology.</span>
+          </li>
+          <li>
+            <span class="cv-yr">2026</span>
+            <span class="cv-txt"><strong>IBM watsonx Specialist &amp; ORBIT System Lead</strong> &mdash; Enterprise-grade agentic AI on IBM infrastructure. International team lead, IBM Dev Day Hackathon.</span>
+          </li>
+          <li class="highlight-entry">
+            <span class="cv-yr">2025&ndash;</span>
+            <span class="cv-txt">
+              <strong>Qwasar Silicon Valley / JobInTech / Web4Jobs</strong><span class="ongoing">Ongoing</span><br>
+              AI Engineering &amp; Fullstack Software Development &mdash; 60+ projects spanning React, Next.js, Node.js, NestJS, SQL, AI systems, cloud, and cybersecurity. 85+ professional certifications from IBM, Google, Microsoft, Oracle.
+            </span>
+          </li>
+          <li>
+            <span class="cv-yr">2024</span>
+            <span class="cv-txt"><strong>Financial Analyst &amp; Ministry of Interior Internship</strong> &mdash; Institutional finance and public sector digital governance, Morocco.</span>
+          </li>
+          <li>
+            <span class="cv-yr">2023&ndash;</span>
+            <span class="cv-txt"><strong>Founder &mdash; Elite Yassmin Cooperative</strong> &mdash; AI-transformed women-led natural cosmetics cooperative, Dakhla. 2&times; National Award recognition.</span>
+          </li>
+          <li>
+            <span class="cv-yr">2023</span>
+            <span class="cv-txt"><strong>Link Artisanal Dakhla &mdash; National Award</strong> &mdash; Government-recognised AI artisan market access platform, Kingdom of Morocco.</span>
+          </li>
+          <li>
+            <span class="cv-yr">2021</span>
+            <span class="cv-txt"><strong>Arizona State University</strong> &mdash; Computer Science coursework. ISTA Business &amp; Finance programme, Morocco (2022&ndash;2025).</span>
+          </li>
         </ul>
       </div>
-      <div class="cv-actions">
-        <a href="mailto:leilacheikhee@gmail.com?subject=CV%20Request%20%E2%80%94%20Leila%20Cheikhe" class="btn-cv">
-          Request Executive CV
+      <div class="cv-side">
+        <a href="cv.html" class="btn-cv" target="_blank" rel="noopener">
+          Download Executive CV
         </a>
         <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="btn-cv-out">
           View LinkedIn Profile
         </a>
-        <p class="cv-note">Executive CV available upon request. Response within 48 hours.</p>
+        <div class="cv-stat-box">
+          <div class="cv-stat">
+            <div class="cv-stat-n">60+</div>
+            <div class="cv-stat-l">Engineering<br>Projects</div>
+          </div>
+          <div class="cv-stat">
+            <div class="cv-stat-n">85+</div>
+            <div class="cv-stat-l">Professional<br>Certifications</div>
+          </div>
+          <div class="cv-stat">
+            <div class="cv-stat-n">6</div>
+            <div class="cv-stat-l">AI Ventures<br>Built</div>
+          </div>
+          <div class="cv-stat">
+            <div class="cv-stat-n">2&times;</div>
+            <div class="cv-stat-l">National<br>Awards</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ── CONTACT ─────────────────────────────────────────── -->
 <section id="contact" class="contact">
-  <div class="container">
-    <span class="label">Contact</span>
-    <h2 class="section-title">Let's Build<br><strong>What Matters</strong></h2>
-    <p class="section-sub">Open to global AI strategy roles, fellowships, research collaborations, advisory engagements, and co-building.</p>
-    <div class="contact-grid">
-      <div class="fade-up">
-        <span class="label">Open To</span>
+  <div class="wrap">
+    <span class="eye">Contact</span>
+    <h2 class="h2">Let's Build<br><strong>What Matters</strong></h2>
+    <p class="sub">Open to global AI strategy roles, fellowships, research collaborations, advisory engagements, and co-building.</p>
+    <div class="cg">
+      <div class="fade">
+        <span class="eye">Open To</span>
         <ul class="open-to">
           <li>International AI strategy and executive leadership roles</li>
           <li>Global fellowships &mdash; WEF, MIT Solve, USAID, Open Society</li>
@@ -883,48 +927,39 @@ footer {
           <li>Consulting and advisory projects</li>
           <li>Venture partnerships and co-building</li>
         </ul>
-        <span class="label" style="margin-top: 8px;">Connect</span>
-        <div class="social-items">
-          <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <div class="s-info"><div class="s-name">LinkedIn</div><div class="s-handle">leila-cheikhe-661368267</div></div>
-            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
+        <span class="eye" style="margin-top:8px;">Connect</span>
+        <div class="socials">
+          <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" class="soc">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="#C8913A" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <div class="si"><div class="sn">LinkedIn</div><div class="sh">leila-cheikhe-661368267</div></div>
+            <span style="color:var(--gold);">&#x2192;</span>
           </a>
-          <a href="https://github.com/leilacheikhee-web" target="_blank" rel="noopener" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4953A" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            <div class="s-info"><div class="s-name">GitHub</div><div class="s-handle">leilacheikhee-web</div></div>
-            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
+          <a href="https://github.com/leilacheikhee-web" target="_blank" rel="noopener" class="soc">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="#C8913A" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <div class="si"><div class="sn">GitHub</div><div class="sh">leilacheikhee-web</div></div>
+            <span style="color:var(--gold);">&#x2192;</span>
           </a>
-          <a href="https://leilacheikhe.substack.com" target="_blank" rel="noopener" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <div class="s-info"><div class="s-name">Newsletter</div><div class="s-handle">AI for Africa &mdash; Substack</div></div>
-            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
+          <a href="https://leilacheikhe.substack.com" target="_blank" rel="noopener" class="soc">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C8913A" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="si"><div class="sn">Newsletter</div><div class="sh">AI for Africa &mdash; Substack</div></div>
+            <span style="color:var(--gold);">&#x2192;</span>
           </a>
-          <a href="mailto:leilacheikhee@gmail.com" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4953A" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
-            <div class="s-info"><div class="s-name">Email</div><div class="s-handle">leilacheikhee@gmail.com</div></div>
-            <span class="s-arrow" aria-hidden="true">&#x2192;</span>
+          <a href="mailto:leilacheikhee@gmail.com" class="soc">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C8913A" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+            <div class="si"><div class="sn">Email</div><div class="sh">leilacheikhee@gmail.com</div></div>
+            <span style="color:var(--gold);">&#x2192;</span>
           </a>
         </div>
       </div>
-      <div class="contact-form fade-up">
-        <h3 class="form-title">Send a Message</h3>
+      <div class="cform fade">
+        <h3 class="fh">Send a Message</h3>
         <form id="contactForm" novalidate>
-          <div class="form-group">
-            <label class="form-label" for="fname">Full Name</label>
-            <input type="text" id="fname" class="form-input" placeholder="Your full name" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="femail">Email</label>
-            <input type="email" id="femail" class="form-input" placeholder="your@email.com" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="forg">Organisation</label>
-            <input type="text" id="forg" class="form-input" placeholder="Company, NGO, University (optional)" autocomplete="organization">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="fsubject">Subject</label>
-            <select id="fsubject" class="form-select">
+          <div class="fg"><label class="fl" for="fname">Full Name</label><input type="text" id="fname" class="fi" placeholder="Your full name" required autocomplete="name"></div>
+          <div class="fg"><label class="fl" for="femail">Email</label><input type="email" id="femail" class="fi" placeholder="your@email.com" required autocomplete="email"></div>
+          <div class="fg"><label class="fl" for="forg">Organisation</label><input type="text" id="forg" class="fi" placeholder="Company, NGO, University (optional)" autocomplete="organization"></div>
+          <div class="fg">
+            <label class="fl" for="fsubject">Subject</label>
+            <select id="fsubject" class="fsel">
               <option value="Job Opportunity">Job Opportunity</option>
               <option value="Fellowship or Grant">Fellowship or Grant</option>
               <option value="Research Collaboration">Research Collaboration</option>
@@ -934,23 +969,20 @@ footer {
               <option value="Other">Other</option>
             </select>
           </div>
-          <div class="form-group">
-            <label class="form-label" for="fmessage">Message</label>
-            <textarea id="fmessage" class="form-textarea" placeholder="Tell me more..." required></textarea>
-          </div>
-          <button type="button" id="submitBtn" onclick="submitContactForm()" class="form-submit">Send Message &#x2192;</button>
-          <p class="form-note" id="formNote">Typically responded to within 48 hours.</p>
+          <div class="fg"><label class="fl" for="fmessage">Message</label><textarea id="fmessage" class="fta" placeholder="Tell me more..." required></textarea></div>
+          <button type="button" id="submitBtn" onclick="submitForm()" class="fsub">Send Message &#x2192;</button>
+          <p class="fnote" id="formNote">Responded to within 48 hours.</p>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ── FOOTER ──────────────────────────────────────────── -->
 <footer>
-  <div class="footer-logo">Leila Cheikhe</div>
-  <div class="footer-tag">AI Strategy Architect &middot; Builder of Intelligent Systems &middot; Future CAIO</div>
-  <ul class="footer-nav">
+  <div class="fn">Leila Cheikhe</div>
+  <div class="ft">AI Strategy Architect &middot; Builder of Intelligent Systems &middot; Future CAIO</div>
+  <ul class="fnav">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#ventures">Ventures</a></li>
@@ -958,95 +990,72 @@ footer {
     <li><a href="#cv">CV</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="footer-social">
+  <div class="fsoc">
     <a href="https://linkedin.com/in/leila-cheikhe-661368267" target="_blank" rel="noopener" title="LinkedIn">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(248,246,242,0.45)" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(240,237,232,.4)" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a>
     <a href="https://github.com/leilacheikhee-web" target="_blank" rel="noopener" title="GitHub">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(248,246,242,0.45)" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(240,237,232,.4)" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
     </a>
     <a href="https://leilacheikhe.substack.com" target="_blank" rel="noopener" title="Newsletter">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.45)" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(240,237,232,.4)" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     </a>
     <a href="mailto:leilacheikhee@gmail.com" title="Email">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(248,246,242,0.45)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(240,237,232,.4)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
     </a>
   </div>
-  <div class="footer-copy">&copy; 2026 Leila Cheikhe &middot; leilacheikhe.com &middot; All rights reserved.</div>
+  <div class="fc">&copy; 2026 Leila Cheikhe &middot; leilacheikhe.com &middot; All rights reserved.</div>
 </footer>
 
 <script>
-(function () {
-  'use strict';
+(function(){
+'use strict';
 
-  // Contact form
-  async function submitContactForm() {
-    var btn     = document.getElementById('submitBtn');
-    var note    = document.getElementById('formNote');
-    var name    = document.getElementById('fname').value.trim();
-    var email   = document.getElementById('femail').value.trim();
-    var org     = document.getElementById('forg').value.trim();
-    var subject = document.getElementById('fsubject').value;
-    var message = document.getElementById('fmessage').value.trim();
-    if (!name || !email || !message) {
-      note.textContent = 'Please complete your name, email, and message.';
-      note.style.color = '#F59E0B';
-      return;
-    }
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-    note.textContent = '';
-    try {
-      var res = await fetch('https://formspree.io/f/mqegwdlp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ name: name, email: email, organization: org, subject: subject, message: message })
-      });
-      var result = await res.json();
-      if (res.ok) {
-        btn.textContent = 'Message Sent';
-        btn.style.background = '#0EA672';
-        note.textContent = 'Thank you. Leila will review your message personally.';
-        note.style.color = '#0EA672';
-        document.getElementById('contactForm').reset();
-      } else {
-        throw new Error(result.error || 'Submission failed');
-      }
-    } catch (err) {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-      btn.style.background = '';
-      note.textContent = 'Something went wrong. Email leilacheikhee@gmail.com directly.';
-      note.style.color = '#F59E0B';
-    }
+async function submitForm(){
+  var btn=document.getElementById('submitBtn'),note=document.getElementById('formNote');
+  var name=document.getElementById('fname').value.trim();
+  var email=document.getElementById('femail').value.trim();
+  var org=document.getElementById('forg').value.trim();
+  var subject=document.getElementById('fsubject').value;
+  var message=document.getElementById('fmessage').value.trim();
+  if(!name||!email||!message){note.textContent='Please complete name, email, and message.';note.style.color='#F59E0B';return;}
+  btn.textContent='Sending...';btn.disabled=true;note.textContent='';
+  try{
+    var res=await fetch('https://formspree.io/f/mqegwdlp',{
+      method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name,email,organization:org,subject,message})
+    });
+    var result=await res.json();
+    if(res.ok){
+      btn.textContent='Message Sent';btn.style.background='#0EA672';
+      note.textContent='Thank you. Leila will review your message personally.';note.style.color='#0EA672';
+      document.getElementById('contactForm').reset();
+    }else{throw new Error(result.error||'Failed');}
+  }catch(e){
+    btn.textContent='Send Message';btn.disabled=false;btn.style.background='';
+    note.textContent='Something went wrong. Email leilacheikhee@gmail.com directly.';note.style.color='#F59E0B';
   }
-  window.submitContactForm = submitContactForm;
+}
+window.submitForm=submitForm;
 
-  // Mobile menu
-  window.openMobileMenu  = function () { document.getElementById('mobileMenu').classList.add('open'); };
-  window.closeMobileMenu = function () { document.getElementById('mobileMenu').classList.remove('open'); };
+window.openMob=function(){document.getElementById('mobMenu').classList.add('open');};
+window.closeMob=function(){document.getElementById('mobMenu').classList.remove('open');};
 
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      var target = document.querySelector(link.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-    });
+document.querySelectorAll('a[href^="#"]').forEach(function(l){
+  l.addEventListener('click',function(e){
+    var t=document.querySelector(l.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
   });
+});
 
-  // Scroll-reveal
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.fade-up').forEach(function (el) { observer.observe(el); });
+var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.07});
+document.querySelectorAll('.fade').forEach(function(el){io.observe(el);});
 
-  // Nav background
-  window.addEventListener('scroll', function () {
-    document.getElementById('navbar').style.background =
-      window.scrollY > 50 ? 'rgba(5,8,26,0.99)' : 'rgba(5,8,26,0.94)';
-  }, { passive: true });
+window.addEventListener('scroll',function(){
+  document.getElementById('navbar').style.background=
+    window.scrollY>50?'rgba(4,6,15,.99)':'rgba(4,6,15,.86)';
+},{passive:true});
+
 })();
 </script>
 </body>
